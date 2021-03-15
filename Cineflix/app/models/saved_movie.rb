@@ -1,0 +1,2 @@
+class SavedMovie < ApplicationRecord
+end
