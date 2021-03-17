@@ -68,3 +68,73 @@ Migrating to CreateGenres (20210315224829)
   ↳ bin/rails:9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(663131795806482660)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeSavedMoviesToMyLists (20210317160923)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "saved_movies" RENAME TO "my_lists"[0m
+  ↳ db/migrate/20210317160923_change_saved_movies_to_my_lists.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mALTER INDEX "saved_movies_pkey" RENAME TO "my_lists_pkey"[0m
+  ↳ db/migrate/20210317160923_change_saved_movies_to_my_lists.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "public"."saved_movies_id_seq" RENAME TO "my_lists_id_seq"[0m
+  ↳ db/migrate/20210317160923_change_saved_movies_to_my_lists.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mALTER INDEX "index_saved_movies_on_movie_id" RENAME TO "index_my_lists_on_movie_id"[0m
+  ↳ db/migrate/20210317160923_change_saved_movies_to_my_lists.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mALTER INDEX "index_saved_movies_on_user_id" RENAME TO "index_my_lists_on_user_id"[0m
+  ↳ db/migrate/20210317160923_change_saved_movies_to_my_lists.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210317160923"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(663131795806482660)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2021-03-17 15:10:38 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /root/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (1.0ms)
+Started GET "/" for ::1 at 2021-03-17 15:10:41 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26995ms (Views: 26945.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 23544ms (Views: 23494.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-17 15:11:27 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 502ms (Views: 452.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-03-17 16:15:17 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /root/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.5ms)
+Started GET "/" for ::1 at 2021-03-17 16:15:21 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 26883ms (Views: 26838.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 25637ms (Views: 25567.6ms | ActiveRecord: 0.0ms)
+
+
