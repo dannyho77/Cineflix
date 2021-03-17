@@ -126,6 +126,8 @@
     "react-router-dom": "^5.2.0",
     "rechoir": "^0.7.0",
     "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
     "regenerate": "^1.4.2",
     "regenerate-unicode-properties": "^8.2.0",
     "regenerator-runtime": "^0.13.7",
