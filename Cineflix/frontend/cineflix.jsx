@@ -10,3 +10,4 @@
 
 //   ReactDOM.render(<Root store={store} />, root);
 // });
+<p>Cineflix</p>
