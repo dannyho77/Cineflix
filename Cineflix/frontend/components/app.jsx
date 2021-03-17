@@ -12,7 +12,7 @@ import { Route,
 // import EditReportFormContainer from './reports/edit_report_form_container';
 // import ReportShowContainer from './reports/report_show_container';
 import SignupFormContainer from './session/signup_form_container';
-import { AuthRoute, ProtectedRoute } from '../util/route_util';
+import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 
 
 const App = () => (
