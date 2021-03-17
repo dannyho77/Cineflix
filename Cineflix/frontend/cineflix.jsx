@@ -10,4 +10,6 @@
 
 //   ReactDOM.render(<Root store={store} />, root);
 // });
-return <p>Cineflix</p>
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(<p>Cineflix</p>);
+});
