@@ -11,5 +11,5 @@ import ReactDOM from 'react-dom';
 //   ReactDOM.render(<Root store={store} />, root);
 // });
 document.addEventListener('DOMContentLoaded', () => {
-  ReactDOM.render(<p>Cineflix</p>);
+  ReactDOM.render(<div>Cineflix</div>);
 });
