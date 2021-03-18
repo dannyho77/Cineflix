@@ -11,21 +11,23 @@ import { Route,
 // import CreateReportFormContainer from './reports/create_report_form_container';
 // import EditReportFormContainer from './reports/edit_report_form_container';
 // import ReportShowContainer from './reports/report_show_container';
+import LoginFormContainer from '../components/session/login_form_container'
 import SignupFormContainer from './session/signup_form_container';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 
 
 const App = () => (
   <div>
-    <Switch>
+    {/* <Switch> */}
+      <div>Help</div>
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
-      <Route exact path="/" component={HomeContainer} />
+      {/* <Route exact path="/" component={HomeContainer} />
       <ProtectedRoute exact path="/movies" component={MovieIndexContainer} />
       <ProtectedRoute exact path="/movies/:movieId" component={MovieShowContainer} />
       <ProtectedRoute exact path="/movies/savedMovies" component={SavedMoviesIndexContainer} />
-      <ProtectedRoute exact path="/movies/:genre" component={GenreShowContainer} />
-    </Switch>
+      <ProtectedRoute exact path="/movies/:genre" component={GenreShowContainer} /> */}
+    {/* </Switch> */}
   </div>
 );
 
