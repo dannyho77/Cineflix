@@ -13,6 +13,7 @@ import { Route,
 // import ReportShowContainer from './reports/report_show_container';
 import LoginFormContainer from '../components/session/login_form_container'
 import SignupFormContainer from './session/signup_form_container';
+import home from '../components/home/home'
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 
 
@@ -21,6 +22,7 @@ const App = () => (
      <Switch>
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
+      <Route exact path="/" component={home} />
       {/* <ProtectedRoute exact path="/movies" component={MovieIndexContainer} />
       <ProtectedRoute exact path="/movies/:movieId" component={MovieShowContainer} />
       <ProtectedRoute exact path="/movies/savedMovies" component={SavedMoviesIndexContainer} />
