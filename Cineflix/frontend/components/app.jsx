@@ -18,8 +18,8 @@ import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 
 const App = () => (
   <div>
-    {/* <Switch> */}
-      <div>Help</div>
+    <Switch>
+      <div>This is the entry point!</div>
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
       {/* <Route exact path="/" component={HomeContainer} />
@@ -27,7 +27,8 @@ const App = () => (
       <ProtectedRoute exact path="/movies/:movieId" component={MovieShowContainer} />
       <ProtectedRoute exact path="/movies/savedMovies" component={SavedMoviesIndexContainer} />
       <ProtectedRoute exact path="/movies/:genre" component={GenreShowContainer} /> */}
-    {/* </Switch> */}
+      <Redirect to="/"></Redirect>
+    </Switch>
   </div>
 );
 
