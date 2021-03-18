@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Link } from 'react-router-dom';
 
 class SignupForm extends React.Component {
     constructor(props) {
@@ -27,10 +28,6 @@ class SignupForm extends React.Component {
             <div className="signup-form-container">
                 <form onSubmit={this.handleSubmit} className="signup-form-box">
                     <div id='text1'>Create a password to start your membership.</div>
-                    <br/>
-                    <div>Just a few more steps and you're done!</div>
-                    <br/>
-                    <div>We hate paperwork, too.</div>
                     <br/>
                     <input type="text" value={this.state.email} onChange={this.update('email')} className='login-input'/>
                     <br/>
