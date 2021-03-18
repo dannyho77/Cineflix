@@ -4,16 +4,17 @@ import { Link } from 'react-router-dom';
 import { createNewUser } from '../../actions/session';
 import SignupForm from './signup_form';
 
-const mapStateToProps = ({ errors }) => {
+// const mapStateToProps = ({ errors }) => {
+  const mapStateToProps = ({ }) => {
     return {
-      errors: errors.session,
+      // errors: errors.session,
       formType: 'signup'
     };
   };
   
   const mapDispatchToProps = dispatch => {
     return {
-      processForm: (user) => dispatch(signup(user)),
+      processForm: (user) => dispatch(createNewUser(user)),
     };
   };
   
