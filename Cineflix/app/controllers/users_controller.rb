@@ -15,7 +15,7 @@ class UsersController < ApplicationController
           flash.now[:errors] = @user.errors
           render :new
         end
-      end
+    end
 
     private
     def user_params

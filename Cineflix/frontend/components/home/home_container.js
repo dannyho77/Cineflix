@@ -1,14 +1,14 @@
-// import { connect } from 'react-redux';
-// import React from 'react';
-// // import { Link } from 'react-router-dom';
-// import { createNewUser } from '../../actions/session';
-// import Home from './home';
+import { connect } from 'react-redux';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { goToSignup } from '../../actions/home';
+import home from './home';
 
   
-//   const mapDispatchToProps = dispatch => {
-//     return {
-//       processForm: (user) => dispatch(createNewUser(user)),
-//     };
-//   };
+  const mapDispatchToProps = dispatch => {
+    return {
+      processForm: (email) => dispatch(goToSignup(email)),
+    };
+  };
   
-//   export default connect(mapStateToProps, mapDispatchToProps)(SignupForm);
+  export default connect(mapDispatchToProps)(home);
