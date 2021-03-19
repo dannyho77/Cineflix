@@ -33,10 +33,10 @@ class Home extends React.Component {
  
                 <form onSubmit={this.handleSubmit} className="home-enter-email">
                     <input type="text" placeholder='Email address'/>
-                    <button>Get Started</button>
+                    <button>Get Started &gt;</button>
                 </form>
-                <br/>
-                <button>Demo</button>
+                
+                <button id='demo'>Demo</button>
             </div>
             </div>
         );
