@@ -2494,3 +2494,10 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 644ms (Views: 598.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2021-03-19 14:21:36 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 541ms (Views: 496.0ms | ActiveRecord: 0.0ms)
+
+

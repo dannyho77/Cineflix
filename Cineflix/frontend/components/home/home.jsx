@@ -35,8 +35,6 @@ class Home extends React.Component {
                     <input type="text" placeholder='Email address'/>
                     <button>Get Started &gt;</button>
                 </form>
-                
-                <button id='demo'>Demo</button>
             </div>
             </div>
         );

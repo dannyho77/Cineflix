@@ -36,9 +36,10 @@
     margin-bottom: 1rem;
 }
 
-.home-container form{
-    display: inline;
-    margin-bottom: 2rem;
+.home-container .home-enter-email{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
 }
 
 .home-container button{
@@ -46,6 +47,7 @@
     left: .5rem 0;
     -webkit-box-flex: 1;
     flex: 1 1 auto; */
+    /* margin: auto; */
     border-radius: 2px;
     border: none;
     height: 60px;
@@ -58,9 +60,6 @@
     font-size: 25px;
     font-weight: 400;
 } 
-.home-container button #demo{
-    margin-top: 5px;
-}
 
 .home-container button:hover {
     background-color: red;
