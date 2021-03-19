@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { goToSignup } from '../../actions/home';
 import home from './home';
 
@@ -11,4 +11,4 @@ import home from './home';
     };
   };
   
-  export default connect(mapDispatchToProps)(home);
+  export default withRouter(connect(mapDispatchToProps)(home));

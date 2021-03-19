@@ -13,9 +13,13 @@
  *= require_tree .
  *= require_self
  */
+ html {
+    
+}
 
  body {
-     background-image: url("https://assets.nflxext.com/ffe/siteui/allow-robots/contentSampling/seo-watch-free-link-preview.jpg");
+     margin: 0;
+     padding: 0;
      background-color: black;
      color: white;
      font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
