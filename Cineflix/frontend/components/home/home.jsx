@@ -27,9 +27,10 @@ class Home extends React.Component {
         return(
             <div className="home-body">
             <div className="home-container">
-                <h1>Unlimited movies, TV <br/> shows, and more.</h1>
-                <h2>Watch anywhere. Cancel anytime.</h2>
-                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                <div id='a'>Unlimited movies, TV <br/> shows, and more.</div>
+                <div id='b'>Watch anywhere. Cancel anytime.</div>
+                <div id='c'>Ready to watch? Enter your email to create or restart your membership.</div>
+ 
                 <form onSubmit={this.handleSubmit} className="home-enter-email">
                     <input type="text"/>
                     <button>Get Started</button>
