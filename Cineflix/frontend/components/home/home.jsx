@@ -32,7 +32,7 @@ class Home extends React.Component {
                 <div id='c'>Ready to watch? Enter your email to create or restart your membership.</div>
  
                 <form onSubmit={this.handleSubmit} className="home-enter-email">
-                    <input type="text"/>
+                    <input type="text" placeholder='Email address'/>
                     <button>Get Started</button>
                 </form>
                 <br/>
