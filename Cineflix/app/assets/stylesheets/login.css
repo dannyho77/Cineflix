@@ -1,5 +1,4 @@
 #login-form-body {
-    position: fixed;
     top: 0;
     left: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.75)),
@@ -8,6 +7,8 @@
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    position: absolute;
+    object-fit: cover;
 }
 
 .login-form-container{
@@ -70,7 +71,7 @@
 
 #newto {
     color: rgb(75, 75, 75);
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #newto Link{

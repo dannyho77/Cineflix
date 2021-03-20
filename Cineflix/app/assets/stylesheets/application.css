@@ -42,3 +42,7 @@
  Link:hover{
      text-decoration: underline;
  }
+
+ input{
+     outline: none;
+ }
