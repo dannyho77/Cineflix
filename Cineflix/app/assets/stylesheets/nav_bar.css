@@ -4,8 +4,24 @@
 }
 
 .left-nav img{
-    height: 85%;
-    width: 60%;
+    height: 10%;
+    width: auto;
+}
+
+.right-nav{
+    float: right;
+}
+
+.right-nav #github{
+    height: 10%;
+    width: auto;
+    float: right;
+}
+
+.right-nav #linkedin{
+    height: 13%;
+    width: auto;
+    float: right;
 }
 
 .right-nav #login-button{
