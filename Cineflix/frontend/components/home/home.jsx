@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavBar from '../nav_bar/nav_bar'
 
 class Home extends React.Component {
     constructor(props) {
@@ -25,18 +26,21 @@ class Home extends React.Component {
 
       render(){
         return(
-            <div className="home-body">
-            <div className="home-container">
-                <div id='a'>Unlimited movies, TV <br/> shows, and more.</div>
-                <div id='b'>Watch anywhere. Cancel anytime.</div>
-                <div id='c'>Ready to watch? Enter your email to create or restart your membership.</div>
- 
-                <form onSubmit={this.handleSubmit} className="home-enter-email">
-                    <input type="text" placeholder='Email address'/>
-                    <button>Get Started &gt;</button>
-                </form>
-            </div>
-            </div>
+          <div>
+            <NavBar/>
+                <div className="home-body">
+                <div className="home-container">
+                    <div id='a'>Unlimited movies, TV <br/> shows, and more.</div>
+                    <div id='b'>Watch anywhere. Cancel anytime.</div>
+                    <div id='c'>Ready to watch? Enter your email to create or restart your membership.</div>
+    
+                    <form onSubmit={this.handleSubmit} className="home-enter-email">
+                        <input type="text" placeholder='Email address'/>
+                        <button>Get Started &gt;</button>
+                    </form>
+                </div>
+                </div>
+          </div>
         );
       }
 }
