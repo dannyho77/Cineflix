@@ -17,6 +17,7 @@
     transform: translate(-50%, -50%);
     flex: none;
     min-height: 550px;
+    min-width: 350px;
     padding: 60px 68px 40px;
     margin-bottom: 90px;
     background-color: rgba(0, 0, 0, 0.65);
@@ -58,7 +59,7 @@
     background-color: rgba(255, 0, 0, 0.89);
     text-align: center;
     color: white;
-    width: 218px;
+    width: 217px;
     margin-bottom: 1rem;
     border-style: none;
 }
