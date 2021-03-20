@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from '../nav_bar/nav_bar'
+// import NavBar from '../nav_bar/nav_bar'
 
 class Home extends React.Component {
     constructor(props) {
@@ -27,7 +27,7 @@ class Home extends React.Component {
       render(){
         return(
           <div>
-            <NavBar/>
+            {/* <NavBar/> */}
                 <div className="home-body">
                 <div className="home-container">
                     <div id='a'>Unlimited movies, TV <br/> shows, and more.</div>

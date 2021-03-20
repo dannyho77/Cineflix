@@ -13,14 +13,32 @@
  *= require_tree .
  *= require_self
  */
- html {
+ html{
     
 }
 
- body {
+ body{
      margin: 0;
      padding: 0;
      background-color: black;
      color: white;
      font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+ }
+
+ div {
+    color: white;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+ }
+
+ button{
+    cursor: pointer;
+ }
+
+ Link {
+     text-decoration: none;
+     color: white;
+ }
+
+ Link:hover{
+     text-decoration: underline;
  }

@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
 
 import App from './app';
-import NavBar from './nav_bar/nav_bar'
 
 const Root = ({ store }) => (
   <Provider store={store}>

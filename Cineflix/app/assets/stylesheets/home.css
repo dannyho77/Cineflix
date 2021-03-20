@@ -71,7 +71,7 @@
 }
 .home-container input{
     /* border-radius: 2px; */
-    padding: .5rem 0;
+    padding: 10px 10px;
     height: 40px;
     min-width: 415px;
 } 
