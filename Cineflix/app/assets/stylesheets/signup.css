@@ -1,3 +1,9 @@
+#signup-navbar{
+    background-color: white;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.945);
+    height: 90px;
+}
+
 .signup-form-container{
     background-color: white;
     height: 100%;

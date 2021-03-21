@@ -11,16 +11,14 @@ import { Route,
 // import CreateReportFormContainer from './reports/create_report_form_container';
 // import EditReportFormContainer from './reports/edit_report_form_container';
 // import ReportShowContainer from './reports/report_show_container';
-import LoginFormContainer from '../components/session/login_form_container'
+import LoginFormContainer from '../components/session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
-import home from '../components/home/home'
-import NavBar from '../components/nav_bar/nav_bar'
+import home from '../components/home/home';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 
 
 const App = () => (
   <div>
-     <NavBar/>
      <Switch>
       <AuthRoute exact path="/login" component={LoginFormContainer} />
       <AuthRoute exact path="/signup" component={SignupFormContainer} />

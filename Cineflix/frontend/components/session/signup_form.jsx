@@ -1,5 +1,6 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import NavBar from '../nav_bar/nav_bar';
 
 class SignupForm extends React.Component {
     constructor(props) {
@@ -26,6 +27,7 @@ class SignupForm extends React.Component {
     render(){
         return(
           <html classname='signup-form-body'>
+            <div id='signup-navbar'><NavBar/></div>
               <div className="signup-form-container">
                   <form onSubmit={this.handleSubmit} className="signup-form-box">
                       <div id='text1'>Create a password to start your membership.</div>
