@@ -2,15 +2,17 @@
     background-color: white;
     border-bottom: 1px solid rgba(221, 221, 221, 0.945);
     height: 90px;
+    margin-bottom: 3rem;
 }
 
 .signup-form-container{
+    width: 100%;
     background-color: white;
     height: 100%;
-    width: 100%;
 }
 
 .signup-form-container #text1{
+    margin-left: 25%;
     color: black;
 }
 
@@ -22,11 +24,13 @@
     font-weight: 400;
     border-style: none;
     min-height: 37px;
-    
+    margin-left: 25%;
+    width: 470px;
 }
 
 .signup-form-box{
     margin: auto;
+    width: 50%;
     height: 100%;
 }
 
@@ -38,7 +42,12 @@
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
+#signup-email{
+    margin-left: 25%;
+}
+
 #signup-password{
+    margin-left: 25%;
     margin-bottom: 1.75rem;
 }
 
