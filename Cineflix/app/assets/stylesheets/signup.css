@@ -1,0 +1,38 @@
+.signup-form-container{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.signup-form-container #text1{
+    color: black;
+}
+
+.signup-submit{
+    background-color: red;
+    border-radius: 2px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border-style: none;
+    min-height: 37px;
+    
+}
+
+.signup-form-box{
+    margin: auto;
+    height: 100%;
+}
+
+.signup-form-box input{
+    min-height: 48px;
+    margin-bottom: .75rem;
+    width: 440px;
+    padding: 10px 10px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#signup-password{
+    margin-bottom: 1.75rem;
+}
+
