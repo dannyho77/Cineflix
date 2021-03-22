@@ -22,6 +22,7 @@ class SignupForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
+        // .then(() => this.props.history.push('/api/movies'));
       }
 
     render(){

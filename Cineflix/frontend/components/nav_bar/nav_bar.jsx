@@ -20,5 +20,16 @@ class NavBar extends React.Component {
       }
 }
 
-
 export default NavBar;
+
+// export default ({currentUser, logout}) => {
+//     const display = currentUser ? (
+
+//     ) : (
+
+//     )
+
+//     return (
+
+//     )
+// }

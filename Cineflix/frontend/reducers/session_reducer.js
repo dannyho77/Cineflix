@@ -4,7 +4,7 @@ import {
 } from '../actions/session'
 
 const _nullSession = {
-    currentuser: null
+    currentUser: null
 };
 
 export default (state = _nullSession, action) => {
