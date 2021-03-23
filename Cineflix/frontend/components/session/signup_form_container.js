@@ -5,10 +5,10 @@ import { createNewUser } from '../../actions/session';
 import SignupForm from './signup_form';
 
 // const mapStateToProps = ({ errors }) => {
-  const mapStateToProps = ({ }) => {
+  const mapStateToProps = ({}, prevProp) => {
     return {
       // errors: errors.session,
-      formType: 'signup'
+      signupProp: prevProp.location.state
     };
   };
   

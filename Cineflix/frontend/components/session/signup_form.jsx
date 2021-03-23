@@ -5,8 +5,16 @@ import NavBar from '../nav_bar/nav_bar';
 class SignupForm extends React.Component {
     constructor(props) {
         super(props);
+        let email = '';
+        
+        if (props.signupProp) {
+          email = props.signupProp.email;
+        } else {
+          email = '';
+        }
+
         this.state = {
-          email: '',
+          email: email,
           password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -22,7 +30,7 @@ class SignupForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user)
-          .then(() => this.props.history.push('/movies'));
+          .then((user) => this.props.history.push('/movies'));
       }
 
     render(){

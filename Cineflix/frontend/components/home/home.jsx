@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import NavBar from '../nav_bar/nav_bar'
 
 class Home extends React.Component {
@@ -20,19 +20,21 @@ class Home extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        const email = Object.assign({}, this.state);
-        if (email !== ''){
+        // const email = Object.assign({}, this.state);
+        if (this.state.email !== ''){
           this.setState({redirect: true})
         };
     }
 
       render(){
 
-        const { redirect } = this.state;
-
-        if (redirect) {
-          return <Redirect to='/signup'/>;
-        }
+// this is 'declarative routing' (https://reactrouter.com/web/api/Redirect)
+        if (this.state.redirect) {
+          return <Redirect to={
+            {pathname: '/signup',
+            state: {email: this.state.email}}
+            }
+          />};
 
         return(
           <div>

@@ -22,7 +22,7 @@ class LoginForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user)
-        .then(() => this.props.history.push('/movies'));
+        .then((user) => this.props.history.push('/movies'));
       }
 
     render(){
