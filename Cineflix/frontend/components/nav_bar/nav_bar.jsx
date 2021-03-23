@@ -22,7 +22,7 @@ import { Link } from 'react-router-dom';
 
 // export default NavBar;
 
-export default ({currentUser, logout}) => {
+const NavBar = ({currentUser, logout}) => {
     const display = currentUser ? (
         <div>
             <Link to='/' id='logo'><img src="https://fontmeme.com/permalink/210319/d1842af13f3a1a8770c2a1aabea4152d.png"/></Link>
@@ -45,3 +45,5 @@ export default ({currentUser, logout}) => {
         </div>
     )
 };
+
+export default NavBar;

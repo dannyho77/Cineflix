@@ -84,3 +84,46 @@
 #newto Link:hover{
     text-decoration: underline;
 }
+
+#login-form-body .NavBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#login-form-body .NavBar #logo{
+    justify-content: flex-start;
+    height: 65px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#login-form-body .NavBar #github{
+    height: 45px;
+    margin-top: 3px;
+}
+
+#login-form-body .NavBar #linkedin{
+    height: 50px;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+#login-form-body .NavBar #signup-button{
+    background-color: rgba(255, 0, 0, 0.89);
+    padding: 6px 10px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#login-form-body .NavBar .right-nav{
+    margin-left: auto;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

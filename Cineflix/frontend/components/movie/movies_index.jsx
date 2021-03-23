@@ -21,6 +21,8 @@ class MoviesIndex extends React.Component{
         return (
         <div>
             <p>testing...</p>
+            <button onClick='{logout}'>Sign Out</button>
+
             {/* <ul>{allMovies}</ul>; */}
         </div>
         

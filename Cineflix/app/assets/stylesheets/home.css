@@ -77,3 +77,46 @@
     height: 40px;
     min-width: 415px;
 } 
+
+.home-body .NavBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-body .NavBar #logo{
+    justify-content: flex-start;
+    height: 65px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.home-body .NavBar #github{
+    height: 45px;
+    margin-top: 3px;
+}
+
+.home-body .NavBar #linkedin{
+    height: 50px;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+.home-body .NavBar #login-button{
+    background-color: rgba(255, 0, 0, 0.89);
+    padding: 6px 10px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.home-body .NavBar .right-nav{
+    margin-left: auto;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

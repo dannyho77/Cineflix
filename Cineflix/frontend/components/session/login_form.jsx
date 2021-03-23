@@ -21,6 +21,7 @@ class LoginForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
+        debugger
         this.props.processForm(user)
         .then(() => this.props.history.push('/movies'));
       }
@@ -28,7 +29,14 @@ class LoginForm extends React.Component {
     render(){
         return(
           <div id="login-form-body">
-            <NavBar/>
+              <div className='NavBar'>
+                    <Link to='/'><img id='logo' src="https://fontmeme.com/permalink/210319/d1842af13f3a1a8770c2a1aabea4152d.png"/></Link>
+                    <div className='right-nav'>
+                        <a href="https://github.com/dannyho77"><img src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-9.png" id="github"/></a>
+                        <a href="https://www.linkedin.com/in/danny-ho-a4988360"><img src="https://cdn2.iconfinder.com/data/icons/simple-social-media-shadow/512/14-512.png" id="linkedin"/></a>
+                        <Link to="/signup" id='signup-button'>Sign Up</Link>
+                    </div>
+              </div>
               <div className="login-form-container">
                   <form onSubmit={this.handleSubmit} className="login-form-box">
                       <h1>Sign In</h1>
