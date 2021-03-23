@@ -20,17 +20,18 @@ class SignupForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
+        debugger
         const user = Object.assign({}, this.state);
         this.props.processForm(user)
-          .then(() => this.props.history.push('/api/movies'));
+          .then(() => this.props.history.push('/movies'));
       }
 
     render(){
         return(
-          <div classname='signup-form-body'>
+          <div className='signup-form-body'>
             <div id='signup-navbar'><NavBar/></div>
               {/* <div className="signup-form-container"> */}
-                  <form onSubmit={this.handleSubmit} className="signup-form-box">
+                  <form className="signup-form-box">
                       <div id='text1'>Create a password to start your <br/> membership.</div>
                       <br/>
                       <div id='item1'>
@@ -38,7 +39,7 @@ class SignupForm extends React.Component {
                         <br/>
                         <input type="password" value={this.state.password} onChange={this.update('password')} id='signup-password' placeholder='Add a password'/>
                         <br/>
-                        <button className="signup-submit">Continue</button>
+                        <button onClick={this.handleSubmit} className="signup-submit">Continue</button>
                       </div>
                   </form>
               {/* </div> */}

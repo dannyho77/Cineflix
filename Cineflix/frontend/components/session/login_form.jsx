@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import NavBar from '../nav_bar/nav_bar';
 
 class LoginForm extends React.Component {
@@ -21,7 +21,8 @@ class LoginForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.processForm(user);
+        this.props.processForm(user)
+        .then(() => this.props.history.push('/movies'));
       }
 
     render(){
