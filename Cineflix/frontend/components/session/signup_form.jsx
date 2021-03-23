@@ -13,10 +13,8 @@ class SignupForm extends React.Component {
           email = '';
         }
 
-        this.state = {
-          email: email,
-          password: ''
-        };
+        this.state = {email: email, password: ''};
+
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
