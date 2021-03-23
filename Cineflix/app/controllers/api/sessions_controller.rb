@@ -1,24 +1,22 @@
 class Api::SessionsController < ApplicationController
-    before_action :ensure_logged_in, only: [:destroy]
-
-    def new
-        @user = User.new
-        render :new
-    end
 
     def create
-        @user = User.find_by_credentials(params[:user][:username], params[:user][:password])
+        @user = User.find_by_credentials(params[:user][:email], params[:user][:password])
 
         if @user
             login(@user)
-            render "/api/users/user"
+            render "/api/users/show"
         else
-            flash.now[:errors] = { base: ['Invalid username or password'] }
+            render json: ['Invalid username or password'], status: 401
         end
     end
 
     def destroy
-        logout
-        render "api/session/new"
+        if current_user
+            logout
+            render json: {}
+        else
+            render json: ['You are not signed in'], status: 404
+        end
     end
 end

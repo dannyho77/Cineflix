@@ -5,9 +5,9 @@ class User < ApplicationRecord
     attr_reader :password
     before_validation :ensure_session_token
 
-    has_many :movies,
+    has_many :my_lists,
     foreign_key: :user_id,
-    class_name: :myList
+    class_name: :MyList
 
     def self.find_by_credentials(email, password)
         user = User.find_by(email: email)
