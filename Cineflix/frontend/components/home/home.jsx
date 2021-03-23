@@ -20,8 +20,8 @@ class Home extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const email = Object.assign({}, this.state);
-        // this.props.processForm(email)
-        this.props.history.push("/signup")
+        this.props.processForm(email)
+          .then(() => this.props.history.push("/signup"));
       }
 
       render(){

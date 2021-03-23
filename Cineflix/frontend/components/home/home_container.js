@@ -7,7 +7,7 @@ import home from './home';
   
   const mapDispatchToProps = dispatch => {
     return {
-      processForm: (email) => dispatch(goToSignup(email)),
+      action: (email) => dispatch(goToSignup(email)),
     };
   };
   

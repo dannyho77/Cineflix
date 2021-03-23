@@ -28,8 +28,7 @@ const App = () => (
       <ProtectedRoute exact path="/movies" component={MoviesIndexContainer} />
       <ProtectedRoute exact path="/movies/:movieId" component={MovieShowContainer} />
       {/* <ProtectedRoute exact path="/movies/savedMovies" component={SavedMoviesIndexContainer} />
-      <ProtectedRoute exact path="/movies/:genre" component={GenreShowContainer} /> */}
-      <Redirect to="/"></Redirect>
+      <ProtectedRoute exact path="/genres/:genreId" component={GenreShowContainer} /> */}
     </Switch>
   </div>
 );
