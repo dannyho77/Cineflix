@@ -6,7 +6,8 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          email: ''
+          email: '',
+          redirect: false
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -15,16 +16,24 @@ class Home extends React.Component {
         return e => this.setState({
           [field]: e.currentTarget.value
         });
-      }
+    }
 
     handleSubmit(e) {
         e.preventDefault();
         const email = Object.assign({}, this.state);
-        this.props.action(email)
-          .then(() => this.props.history.push("/signup"));
-      }
+        if (email !== ''){
+          this.setState({redirect: true})
+        };
+    }
 
       render(){
+
+        const { redirect } = this.state;
+
+        if (redirect) {
+          return <Redirect to='/signup'/>;
+        }
+
         return(
           <div>
                 <div className="home-body">
@@ -42,7 +51,7 @@ class Home extends React.Component {
                       <div id='c'>Ready to watch? Enter your email to create or restart your membership.</div>
       
                       <form onSubmit={this.handleSubmit} className="home-enter-email">
-                          <input type="text" placeholder='Email address'/>
+                          <input type="text" placeholder='Email address' onChange={this.update('email')}/>
                           <button>Get Started &gt;</button>
                       </form>
                   </div>
