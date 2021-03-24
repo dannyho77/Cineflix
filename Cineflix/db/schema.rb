@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_23_205318) do
+ActiveRecord::Schema.define(version: 2021_03_24_132904) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,8 +45,8 @@ ActiveRecord::Schema.define(version: 2021_03_23_205318) do
   create_table "movie_genres", force: :cascade do |t|
     t.integer "movie_id", null: false
     t.integer "genre_id", null: false
-    t.index ["genre_id"], name: "index_movie_genres_on_genre_id", unique: true
-    t.index ["movie_id"], name: "index_movie_genres_on_movie_id", unique: true
+    t.index ["genre_id"], name: "index_movie_genres_on_genre_id"
+    t.index ["movie_id"], name: "index_movie_genres_on_movie_id"
   end
 
   create_table "movies", force: :cascade do |t|
@@ -62,8 +62,8 @@ ActiveRecord::Schema.define(version: 2021_03_23_205318) do
     t.integer "movie_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["movie_id"], name: "index_my_lists_on_movie_id", unique: true
-    t.index ["user_id"], name: "index_my_lists_on_user_id", unique: true
+    t.index ["movie_id"], name: "index_my_lists_on_movie_id"
+    t.index ["user_id"], name: "index_my_lists_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

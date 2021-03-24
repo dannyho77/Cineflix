@@ -10035,3 +10035,163 @@ Completed 200 OK in 703ms (Views: 647.3ms | ActiveRecord: 0.5ms)
   ↳ db/seeds.rb:11
   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ db/seeds.rb:12
+  [1m[36mGenre Load (0.3ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ db/seeds.rb:13
+  [1m[36mMovieGenre Load (1.1ms)[0m  [1m[34mSELECT "movie_genres".* FROM "movie_genres"[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMyList Load (0.9ms)[0m  [1m[34mSELECT "my_lists".* FROM "my_lists"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "baejoohyun@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "ewrh3hXru3g1VBpbfW4sQA=="], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "baejoohyun@gmail.com"], ["password_digest", "$2a$12$66BWk7EqoKG3DAO7eB4JZuRLiJRbHXKjcmCOTaulROdDJJdXQyYqu"], ["session_token", "ewrh3hXru3g1VBpbfW4sQA=="], ["created_at", "2021-03-24 13:21:42.275320"], ["updated_at", "2021-03-24 13:21:42.275320"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mMovie Create (0.9ms)[0m  [1m[32mINSERT INTO "movies" ("title", "description", "created_at", "updated_at", "year") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Parasite"], ["description", "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan."], ["created_at", "2021-03-24 13:21:42.283378"], ["updated_at", "2021-03-24 13:21:42.283378"], ["year", 1991]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "description", "created_at", "updated_at", "year") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Lords of Dogtown"], ["description", "The film follows the surf and skateboarding trends that originated in Venice, California during the 1970's."], ["created_at", "2021-03-24 13:21:42.287399"], ["updated_at", "2021-03-24 13:21:42.287399"], ["year", 2005]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "description", "created_at", "updated_at", "year") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Lost in Translation"], ["description", "A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo."], ["created_at", "2021-03-24 13:21:42.290349"], ["updated_at", "2021-03-24 13:21:42.290349"], ["year", 2003]]
+  ↳ db/seeds.rb:34
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mMovie Create (0.3ms)[0m  [1m[32mINSERT INTO "movies" ("title", "description", "created_at", "updated_at", "year") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "The Outlaws"], ["description", "Based on real events, this crime action film depicts a Seoul detective's attempts to keep peace while two Chinese-Korean gangs battle over turf in the neighborhood."], ["created_at", "2021-03-24 13:21:42.293280"], ["updated_at", "2021-03-24 13:21:42.293280"], ["year", 2017]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:46
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "description", "created_at", "updated_at", "year") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Jerry Maguire"], ["description", "When a sports agent has a moral epiphany and is fired for expressing it, he decides to put his new philosophy to the test as an independent agent with the only athlete who stays with him and his former colleague."], ["created_at", "2021-03-24 13:21:42.296039"], ["updated_at", "2021-03-24 13:21:42.296039"], ["year", 1996]]
+  ↳ db/seeds.rb:46
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:52
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "description", "created_at", "updated_at", "year") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Summer Wars"], ["description", "A student tries to fix a problem he accidentally caused in OZ, a digital world, while pretending to be the fiancé of his friend at her grandmother's 90th birthday."], ["created_at", "2021-03-24 13:21:42.298950"], ["updated_at", "2021-03-24 13:21:42.298950"], ["year", 2009]]
+  ↳ db/seeds.rb:52
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:52
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:60
+  [1m[36mGenre Create (0.3ms)[0m  [1m[32mINSERT INTO "genres" ("genre", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["genre", "Comedy"], ["created_at", "2021-03-24 13:21:42.304286"], ["updated_at", "2021-03-24 13:21:42.304286"]]
+  ↳ db/seeds.rb:60
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:60
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:61
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("genre", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["genre", "Animation"], ["created_at", "2021-03-24 13:21:42.307725"], ["updated_at", "2021-03-24 13:21:42.307725"]]
+  ↳ db/seeds.rb:61
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:61
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("genre", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["genre", "Drama"], ["created_at", "2021-03-24 13:21:42.310449"], ["updated_at", "2021-03-24 13:21:42.310449"]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("genre", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["genre", "Romance"], ["created_at", "2021-03-24 13:21:42.313013"], ["updated_at", "2021-03-24 13:21:42.313013"]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "genres" ("genre", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["genre", "Action"], ["created_at", "2021-03-24 13:21:42.315654"], ["updated_at", "2021-03-24 13:21:42.315654"]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mMovieGenre Create (0.6ms)[0m  [1m[32mINSERT INTO "movie_genres" ("movie_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["movie_id", 1], ["genre_id", 1]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:69
+  [1m[36mMovieGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "movie_genres" ("movie_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["movie_id", 3], ["genre_id", 4]]
+  ↳ db/seeds.rb:69
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:69
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mMovieGenre Create (0.2ms)[0m  [1m[32mINSERT INTO "movie_genres" ("movie_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["movie_id", 2], ["genre_id", 3]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:71
+  [1m[36mMovieGenre Create (1.2ms)[0m  [1m[32mINSERT INTO "movie_genres" ("movie_id", "genre_id") VALUES ($1, $2) RETURNING "id"[0m  [["movie_id", 4], ["genre_id", 3]]
+  ↳ db/seeds.rb:71
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(663131795806482660)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to RemoveIndexFromMyListandMovieGenre (20210324132904)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(663131795806482660)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(663131795806482660)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to RemoveIndexFromMyListandMovieGenre (20210324132904)
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mDROP INDEX  "index_my_lists_on_movie_id"[0m
+  ↳ db/migrate/20210324132904_remove_index_from_my_listand_movie_genre.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mDROP INDEX  "index_my_lists_on_user_id"[0m
+  ↳ db/migrate/20210324132904_remove_index_from_my_listand_movie_genre.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mDROP INDEX  "index_movie_genres_on_genre_id"[0m
+  ↳ db/migrate/20210324132904_remove_index_from_my_listand_movie_genre.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mDROP INDEX  "index_movie_genres_on_movie_id"[0m
+  ↳ db/migrate/20210324132904_remove_index_from_my_listand_movie_genre.rb:6
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_my_lists_on_movie_id" ON "my_lists"  ("movie_id")[0m
+  ↳ db/migrate/20210324132904_remove_index_from_my_listand_movie_genre.rb:7
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_my_lists_on_user_id" ON "my_lists"  ("user_id")[0m
+  ↳ db/migrate/20210324132904_remove_index_from_my_listand_movie_genre.rb:8
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE  INDEX  "index_movie_genres_on_genre_id" ON "movie_genres"  ("genre_id")[0m
+  ↳ db/migrate/20210324132904_remove_index_from_my_listand_movie_genre.rb:9
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_movie_genres_on_movie_id" ON "movie_genres"  ("movie_id")[0m
+  ↳ db/migrate/20210324132904_remove_index_from_my_listand_movie_genre.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210324132904"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(663131795806482660)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
