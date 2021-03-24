@@ -128,7 +128,7 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
-    mimemagic (0.3.5)
+    mimemagic (0.3.6)
     mini_mime (1.0.2)
     minitest (5.14.4)
     msgpack (1.4.2)
@@ -227,7 +227,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   aws-sdk-s3
-  bcrypt
+  bcrypt (~> 3.1.7)
   better_errors
   binding_of_caller
   bootsnap (>= 1.1.0)
