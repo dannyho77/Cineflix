@@ -1,0 +1,129 @@
+#login-form-body {
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.75)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/c43f3cc0-6f02-4b8a-9470-7b1732eb937d/3d037465-1692-41b0-84a8-073ccb74255f/US-en-20210315-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.login-form-container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex: none;
+    min-height: 570px;
+    min-width: 450px;
+    padding: 60px 68px 40px;
+    margin-bottom: 90px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-form-container h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.login-form-container input{
+    border-radius: 4px;
+    height: 48px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    background-color: rgb(75, 75, 75);
+    border-style: none;
+    width: 315px;
+}
+
+#login-email{
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+#login-password{
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+#login-submit{
+    border-radius: 4px;
+    height: 48px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 550;
+    background-color: rgba(255, 0, 0, 0.89);
+    text-align: center;
+    color: white;
+    width: 315px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-style: none;
+}
+
+#newto {
+    color: rgb(75, 75, 75);
+    font-size: 16px;
+}
+
+#newto Link{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#newto Link:hover{
+    text-decoration: underline;
+}
+
+#login-form-body .NavBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#login-form-body .NavBar #logo{
+    justify-content: flex-start;
+    height: 65px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#login-form-body .NavBar #github{
+    height: 45px;
+    margin-top: 3px;
+}
+
+#login-form-body .NavBar #linkedin{
+    height: 50px;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+#login-form-body .NavBar #signup-button{
+    background-color: rgba(255, 0, 0, 0.89);
+    padding: 6px 10px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#login-form-body .NavBar .right-nav{
+    margin-left: auto;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

@@ -1,0 +1,31 @@
+.movies-index .NavBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.movies-index .NavBar #logo{
+    justify-content: flex-start;
+    height: 65px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.movies-index .NavBar #github{
+    height: 45px;
+    margin-top: 3px;
+}
+
+.movies-index .NavBar #linkedin{
+    height: 50px;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+.movies-index .NavBar .right-nav{
+    margin-left: auto;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
