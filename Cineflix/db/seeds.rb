@@ -68,9 +68,9 @@ summer_wars = Movie.create!(
     MovieGenre.create(movie_id: parasite.id, genre_id: comedy.id)
     MovieGenre.create(movie_id: lost_in_translation.id, genre_id: romance.id)
     MovieGenre.create(movie_id: the_lords_of_dogtown.id, genre_id: drama.id)
+    MovieGenre.create(movie_id: parasite.id, genre_id: drama.id)
     MovieGenre.create(movie_id: the_outlaws.id, genre_id: drama.id)
-    MovieGenre.create(movie_id: the_outlaws.id, genre_id: thriller.id)
-    MovieGenre.create(movie_id: parasite.id, genre_id: thriller.id)
+    MovieGenre.create(movie_id: the_outlaws.id, genre_id: action.id)
     MovieGenre.create(movie_id: summer_wars.id, genre_id: animation.id)
     MovieGenre.create(movie_id: jerry_maguire.id, genre_id: comedy.id)
 
