@@ -7,17 +7,17 @@
 .movies-index .NavBar #logo{
     justify-content: flex-start;
     height: 65px;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 45px;
 }
 
 .movies-index .NavBar #github{
-    height: 45px;
+    height: 60px;
     margin-top: 3px;
 }
 
 .movies-index .NavBar #linkedin{
-    height: 50px;
+    height: 70px;
     margin-top: 4px;
     margin-right: 8px;
 }
