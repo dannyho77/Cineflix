@@ -12472,3 +12472,47 @@ Completed 200 OK in 9060ms (Views: 9003.1ms | ActiveRecord: 0.3ms)
   ↳ db/seeds.rb:22
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:22
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 31], ["record_type", "Movie"], ["name", "video"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 31], ["record_type", "Movie"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mGenre Load (0.5ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ db/seeds.rb:13
+  [1m[36mMovieGenre Load (0.4ms)[0m  [1m[34mSELECT "movie_genres".* FROM "movie_genres"[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMyList Load (0.4ms)[0m  [1m[34mSELECT "my_lists".* FROM "my_lists"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "baejoohyun@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "MEWfsJxZcT0jsiLBQe5big=="], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "baejoohyun@gmail.com"], ["password_digest", "$2a$12$Gk/j9ByRvzzGhzG4aFWTB.6iEDsDsEICEuzwE76rHHzDhyV5U/MZG"], ["session_token", "MEWfsJxZcT0jsiLBQe5big=="], ["created_at", "2021-03-25 14:17:42.706690"], ["updated_at", "2021-03-25 14:17:42.706690"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "description", "created_at", "updated_at", "year") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Parasite"], ["description", "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan."], ["created_at", "2021-03-25 14:17:42.710747"], ["updated_at", "2021-03-25 14:17:42.710747"], ["year", 1991]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22

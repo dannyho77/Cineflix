@@ -24,9 +24,9 @@ parasite = Movie.create!(
     description: "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
     year: 1991 
 )
-file = open('https://cineflix-dev.s3.amazonaws.com/iMAyX1V3uyGfRWF9ZcobyunJ')
+file = open('https://cineflix-dev.s3.amazonaws.com/parasite.jpg')
 parasite.photo.attach(io: file, filename: 'parasite.jpg')
-file = open('https://cineflix-dev.s3.amazonaws.com/JQPq3esKkviJfX9JsawQk8L8')
+file = open('https://cineflix-dev.s3.amazonaws.com/parasite_vid.mp4')
 parasite.video.attach(io: file, filename: 'parasite_vid.mp4')
 
 
@@ -35,9 +35,9 @@ the_lords_of_dogtown = Movie.create!(
     description: "The film follows the surf and skateboarding trends that originated in Venice, California during the 1970's.",
     year: 2005
 )
-file = open('https://cineflix-dev.s3.amazonaws.com/A7hPVPn4BaPaNHw3tUBLKnoD')
+file = open('https://cineflix-dev.s3.amazonaws.com/thelordsofdogtown.jpg')
 the_lords_of_dogtown.photo.attach(io: file, filename: 'thelordsofdogtown.jpg')
-file = open('https://cineflix-dev.s3.amazonaws.com/8P1KZ936GNrGhdfRkWCVG7gJ')
+file = open('https://cineflix-dev.s3.amazonaws.com/thelordsofdogtown_vid.mp4')
 the_lords_of_dogtown.video.attach(io: file, filename: 'thelordsofdogtown_vid.mp4')
 
 
@@ -46,9 +46,9 @@ lost_in_translation = Movie.create!(
     description: "A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo.",
     year: 2003
 )
-file = open('https://cineflix-dev.s3.amazonaws.com/qqG6ZUJkFAdtAnqMYTqEK9Xc')
+file = open('https://cineflix-dev.s3.amazonaws.com/lostintranslation.jpg')
 lost_in_translation.photo.attach(io: file, filename: 'lostintranslation.jpg')
-file = open('https://cineflix-dev.s3.amazonaws.com/CFP7VNM2juAExqUsakym11GE')
+file = open('https://cineflix-dev.s3.amazonaws.com/lostintranslation_vid.mp4')
 lost_in_translation.video.attach(io: file, filename: 'lostintranslation_vid.mp4')
 
 
@@ -57,9 +57,9 @@ the_outlaws = Movie.create!(
     description: "Based on real events, this crime action film depicts a Seoul detective's attempts to keep peace while two Chinese-Korean gangs battle over turf in the neighborhood.",
     year: 2017 
 )
-file = open('https://cineflix-dev.s3.amazonaws.com/Aok9UzxzRF9GS9iv4TGAYDsd')
+file = open('https://cineflix-dev.s3.amazonaws.com/theoutlaws.jpg')
 the_outlaws.photo.attach(io: file, filename: 'theoutlaws.jpg')
-file = open('https://cineflix-dev.s3.amazonaws.com/SNhEAd39ma8Fvxt64gJRnbKX')
+file = open('https://cineflix-dev.s3.amazonaws.com/theoutlaws_vid.mp4')
 the_outlaws.video.attach(io: file, filename: 'theoutlaws_vid.mp4')
 
 
@@ -68,9 +68,9 @@ jerry_maguire = Movie.create!(
     description: "When a sports agent has a moral epiphany and is fired for expressing it, he decides to put his new philosophy to the test as an independent agent with the only athlete who stays with him and his former colleague.",
     year: 1996 
 )
-file = open('https://cineflix-dev.s3.amazonaws.com/iec7nvnBicVm36xkBnFQNask')
+file = open('https://cineflix-dev.s3.amazonaws.com/jerrymaguire.jpg')
 jerry_maguire.photo.attach(io: file, filename: 'jerrymaguire.jpg')
-file = open('https://cineflix-dev.s3.amazonaws.com/uCjowkAuaCaaZMmqSL8Z4Aty')
+file = open('https://cineflix-dev.s3.amazonaws.com/jerrymaguire_vid.mp4')
 jerry_maguire.video.attach(io: file, filename: 'jerrymaguire_vid.mp4')
 
 
@@ -79,9 +79,9 @@ summer_wars = Movie.create!(
     description: "A student tries to fix a problem he accidentally caused in OZ, a digital world, while pretending to be the fiancé of his friend at her grandmother's 90th birthday.",
     year: 2009
 )
-file = open('https://cineflix-dev.s3.amazonaws.com/TSBCsz49DAEAm6Q1iuzagzg3')
+file = open('https://cineflix-dev.s3.amazonaws.com/summerwars.jpeg')
 summer_wars.photo.attach(io: file, filename: 'summerwars.jpeg')
-file = open('https://cineflix-dev.s3.amazonaws.com/Bk3xD6ag7g2i3RdyE5f49gsj')
+file = open('https://cineflix-dev.s3.amazonaws.com/summerwars_vid.mp4')
 summer_wars.video.attach(io: file, filename: 'summerwars_vid.mp4')
 
 
