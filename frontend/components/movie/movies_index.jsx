@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { SourceMapGenerator } from 'source-map';
 
-import { logout } from '../../actions/session'
+import { logout } from '../../actions/session';
+import HomeMovie from './home_movie';
 
 
 class MoviesIndex extends React.Component{
@@ -33,7 +34,7 @@ class MoviesIndex extends React.Component{
                     </div>
             </div>
 
-            <p>testing...</p>
+            <HomeMovie />
         </div>
         
         )
