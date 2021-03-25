@@ -127,3 +127,12 @@
     flex-direction: row;
     align-items: center;
 }
+
+#signup-link {
+    text-decoration: none;
+}
+  
+#signup-link:hover {
+    text-decoration: underline;
+}
+

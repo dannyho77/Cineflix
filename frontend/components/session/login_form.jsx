@@ -46,7 +46,7 @@ class LoginForm extends React.Component {
                       <br/>
                       <button id="login-submit">Sign In</button>
                   </form>
-                  <div id='newto'>New to Netflix? <Link to='/signup'>Sign up now.</Link></div>
+                  <div id='newto'>New to Netflix? <Link to='/signup' id='signup-link'>Sign up now.</Link></div>
               </div>
             </div>
         );
