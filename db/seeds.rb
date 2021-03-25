@@ -24,36 +24,66 @@ parasite = Movie.create!(
     description: "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
     year: 1991 
 )
+file = open('https://cineflix-dev.s3.amazonaws.com/iMAyX1V3uyGfRWF9ZcobyunJ')
+parasite.attach(io: file, filename: 'parasite.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/JQPq3esKkviJfX9JsawQk8L8')
+parasite.attach(io: file, filename: 'parasite_vid.mp4')
+
 
 the_lords_of_dogtown = Movie.create!(
     title: "The Lords of Dogtown",
     description: "The film follows the surf and skateboarding trends that originated in Venice, California during the 1970's.",
     year: 2005
 )
+file = open('https://cineflix-dev.s3.amazonaws.com/A7hPVPn4BaPaNHw3tUBLKnoD')
+the_lords_of_dogtown.attach(io: file, filename: 'thelordsofdogtown.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/8P1KZ936GNrGhdfRkWCVG7gJ')
+the_lords_of_dogtown.attach(io: file, filename: 'thelordsofdogtown_vid.mp4')
+
 
 lost_in_translation = Movie.create!(
     title: "Lost in Translation",
     description: "A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo.",
     year: 2003
 )
+file = open('https://cineflix-dev.s3.amazonaws.com/qqG6ZUJkFAdtAnqMYTqEK9Xc')
+lost_in_translation.attach(io: file, filename: 'lostintranslation.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/CFP7VNM2juAExqUsakym11GE')
+lost_in_translation.attach(io: file, filename: 'lostintranslation_vid.mp4')
+
 
 the_outlaws = Movie.create!(
     title: "The Outlaws",
     description: "Based on real events, this crime action film depicts a Seoul detective's attempts to keep peace while two Chinese-Korean gangs battle over turf in the neighborhood.",
     year: 2017 
 )
+file = open('https://cineflix-dev.s3.amazonaws.com/Aok9UzxzRF9GS9iv4TGAYDsd')
+the_outlaws.attach(io: file, filename: 'theoutlaws.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/SNhEAd39ma8Fvxt64gJRnbKX')
+the_outlaws.attach(io: file, filename: 'theoutlaws_vid.mp4')
+
 
 jerry_maguire = Movie.create!(
     title: "Jerry Maguire",
     description: "When a sports agent has a moral epiphany and is fired for expressing it, he decides to put his new philosophy to the test as an independent agent with the only athlete who stays with him and his former colleague.",
     year: 1996 
 )
+file = open('https://cineflix-dev.s3.amazonaws.com/iec7nvnBicVm36xkBnFQNask')
+jerry_maguire.attach(io: file, filename: 'jerrymaguire.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/uCjowkAuaCaaZMmqSL8Z4Aty')
+jerry_maguire.attach(io: file, filename: 'jerrymaguire_vid.mp4')
+
 
 summer_wars = Movie.create!(
     title: "Summer Wars",
     description: "A student tries to fix a problem he accidentally caused in OZ, a digital world, while pretending to be the fiancé of his friend at her grandmother's 90th birthday.",
     year: 2009
 )
+file = open('https://cineflix-dev.s3.amazonaws.com/TSBCsz49DAEAm6Q1iuzagzg3')
+summer_wars.attach(io: file, filename: 'summerwars.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/Bk3xD6ag7g2i3RdyE5f49gsj')
+summer_wars.attach(io: file, filename: 'summerwars_vid.mp4')
+
 
 #--------------------------------------------------
 # Genres
