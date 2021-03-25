@@ -30,7 +30,7 @@ class HomeMovie extends React.Component{
 
         return(
             <div className='home-movie-box'>
-                    <video muted={this.state.muted} autoPlay loop width='100%' height='600'>
+                    <video muted={this.state.muted} autoPlay loop width='100%' height='680'>
                         <source src="https://cineflix-dev.s3.amazonaws.com/jerrymaguire_vid.mp4" type="video/mp4" />
                     </video>
                     <img id='home-movie-logo' src="https://picfiles.alphacoders.com/103/103394.png" />
