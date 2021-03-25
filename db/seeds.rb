@@ -25,9 +25,9 @@ parasite = Movie.create!(
     year: 1991 
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/iMAyX1V3uyGfRWF9ZcobyunJ')
-parasite.attach(io: file, filename: 'parasite.jpg')
+parasite.photo.attach(io: file, filename: 'parasite.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/JQPq3esKkviJfX9JsawQk8L8')
-parasite.attach(io: file, filename: 'parasite_vid.mp4')
+parasite.video.attach(io: file, filename: 'parasite_vid.mp4')
 
 
 the_lords_of_dogtown = Movie.create!(
@@ -36,9 +36,9 @@ the_lords_of_dogtown = Movie.create!(
     year: 2005
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/A7hPVPn4BaPaNHw3tUBLKnoD')
-the_lords_of_dogtown.attach(io: file, filename: 'thelordsofdogtown.jpg')
+the_lords_of_dogtown.photo.attach(io: file, filename: 'thelordsofdogtown.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/8P1KZ936GNrGhdfRkWCVG7gJ')
-the_lords_of_dogtown.attach(io: file, filename: 'thelordsofdogtown_vid.mp4')
+the_lords_of_dogtown.video.attach(io: file, filename: 'thelordsofdogtown_vid.mp4')
 
 
 lost_in_translation = Movie.create!(
@@ -47,9 +47,9 @@ lost_in_translation = Movie.create!(
     year: 2003
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/qqG6ZUJkFAdtAnqMYTqEK9Xc')
-lost_in_translation.attach(io: file, filename: 'lostintranslation.jpg')
+lost_in_translation.photo.attach(io: file, filename: 'lostintranslation.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/CFP7VNM2juAExqUsakym11GE')
-lost_in_translation.attach(io: file, filename: 'lostintranslation_vid.mp4')
+lost_in_translation.video.attach(io: file, filename: 'lostintranslation_vid.mp4')
 
 
 the_outlaws = Movie.create!(
@@ -58,9 +58,9 @@ the_outlaws = Movie.create!(
     year: 2017 
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/Aok9UzxzRF9GS9iv4TGAYDsd')
-the_outlaws.attach(io: file, filename: 'theoutlaws.jpg')
+the_outlaws.photo.attach(io: file, filename: 'theoutlaws.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/SNhEAd39ma8Fvxt64gJRnbKX')
-the_outlaws.attach(io: file, filename: 'theoutlaws_vid.mp4')
+the_outlaws.video.attach(io: file, filename: 'theoutlaws_vid.mp4')
 
 
 jerry_maguire = Movie.create!(
@@ -69,9 +69,9 @@ jerry_maguire = Movie.create!(
     year: 1996 
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/iec7nvnBicVm36xkBnFQNask')
-jerry_maguire.attach(io: file, filename: 'jerrymaguire.jpg')
+jerry_maguire.photo.attach(io: file, filename: 'jerrymaguire.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/uCjowkAuaCaaZMmqSL8Z4Aty')
-jerry_maguire.attach(io: file, filename: 'jerrymaguire_vid.mp4')
+jerry_maguire.video.attach(io: file, filename: 'jerrymaguire_vid.mp4')
 
 
 summer_wars = Movie.create!(
@@ -80,9 +80,9 @@ summer_wars = Movie.create!(
     year: 2009
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/TSBCsz49DAEAm6Q1iuzagzg3')
-summer_wars.attach(io: file, filename: 'summerwars.jpg')
+summer_wars.photo.attach(io: file, filename: 'summerwars.jpeg')
 file = open('https://cineflix-dev.s3.amazonaws.com/Bk3xD6ag7g2i3RdyE5f49gsj')
-summer_wars.attach(io: file, filename: 'summerwars_vid.mp4')
+summer_wars.video.attach(io: file, filename: 'summerwars_vid.mp4')
 
 
 #--------------------------------------------------

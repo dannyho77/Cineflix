@@ -11982,3 +11982,493 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 9060ms (Views: 9003.1ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[36mMovie Load (1.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 28], ["record_type", "Movie"], ["name", "video"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273] Performing ActiveStorage::PurgeJob (Job ID: 9de540a5-c997-4b41-bf5b-75de7ed8c273) from Inline(default) with arguments: #<GlobalID:0x000055dbd9abcbf0 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/7>>
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273]   [1m[36mActiveStorage::Attachment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 7], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273]   [1m[36mActiveStorage::Blob Destroy (0.7ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 7]]
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273]   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273]   [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 7], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273] [36m  S3 Storage (247.6ms) [0m[31mDeleted file from key: SNhEAd39ma8Fvxt64gJRnbKX[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [9de540a5-c997-4b41-bf5b-75de7ed8c273] Performed ActiveStorage::PurgeJob (Job ID: 9de540a5-c997-4b41-bf5b-75de7ed8c273) from Inline(default) in 368.53ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 9de540a5-c997-4b41-bf5b-75de7ed8c273) to Inline(default) with arguments: #<GlobalID:0x000055dbdba384e8 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/7>>
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 28], ["record_type", "Movie"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201] Performing ActiveStorage::PurgeJob (Job ID: 305c11dc-78ae-4110-8f76-493a4a4c5201) from Inline(default) with arguments: #<GlobalID:0x000055dbd964f9c8 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/6>>
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 6], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 6]]
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 6], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201] [36m  S3 Storage (43.5ms) [0m[31mDeleted file from key: Aok9UzxzRF9GS9iv4TGAYDsd[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201] [36m  S3 Storage (29.5ms) [0m[31mDeleted files by key prefix: variants/Aok9UzxzRF9GS9iv4TGAYDsd/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [305c11dc-78ae-4110-8f76-493a4a4c5201] Performed ActiveStorage::PurgeJob (Job ID: 305c11dc-78ae-4110-8f76-493a4a4c5201) from Inline(default) in 78.2ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 305c11dc-78ae-4110-8f76-493a4a4c5201) to Inline(default) with arguments: #<GlobalID:0x000055dbdbad2e30 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/6>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 29], ["record_type", "Movie"], ["name", "video"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557] Performing ActiveStorage::PurgeJob (Job ID: 29b7af30-5103-48c6-961a-66efad2b8557) from Inline(default) with arguments: #<GlobalID:0x000055dbdbaffac0 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/8>>
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 8], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 8]]
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 8], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557] [36m  S3 Storage (38.7ms) [0m[31mDeleted file from key: uCjowkAuaCaaZMmqSL8Z4Aty[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [29b7af30-5103-48c6-961a-66efad2b8557] Performed ActiveStorage::PurgeJob (Job ID: 29b7af30-5103-48c6-961a-66efad2b8557) from Inline(default) in 43.19ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 29b7af30-5103-48c6-961a-66efad2b8557) to Inline(default) with arguments: #<GlobalID:0x000055dbdbb457a0 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/8>>
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 29], ["record_type", "Movie"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378] Performing ActiveStorage::PurgeJob (Job ID: f60967fd-3aa8-4930-9ee0-b9157427f378) from Inline(default) with arguments: #<GlobalID:0x000055dbd95c67b8 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 2], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 2]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378]   [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378] [36m  S3 Storage (33.9ms) [0m[31mDeleted file from key: iec7nvnBicVm36xkBnFQNask[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378] [36m  S3 Storage (27.1ms) [0m[31mDeleted files by key prefix: variants/iec7nvnBicVm36xkBnFQNask/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [f60967fd-3aa8-4930-9ee0-b9157427f378] Performed ActiveStorage::PurgeJob (Job ID: f60967fd-3aa8-4930-9ee0-b9157427f378) from Inline(default) in 65.57ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: f60967fd-3aa8-4930-9ee0-b9157427f378) to Inline(default) with arguments: #<GlobalID:0x000055dbd95b84d8 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/2>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 27], ["record_type", "Movie"], ["name", "video"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71] Performing ActiveStorage::PurgeJob (Job ID: 55566420-ac58-44c1-a95c-0db7ad363d71) from Inline(default) with arguments: #<GlobalID:0x000055dbdbc05460 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/9>>
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 9], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 9]]
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 9], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71] [36m  S3 Storage (57.1ms) [0m[31mDeleted file from key: CFP7VNM2juAExqUsakym11GE[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [55566420-ac58-44c1-a95c-0db7ad363d71] Performed ActiveStorage::PurgeJob (Job ID: 55566420-ac58-44c1-a95c-0db7ad363d71) from Inline(default) in 61.42ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 55566420-ac58-44c1-a95c-0db7ad363d71) to Inline(default) with arguments: #<GlobalID:0x000055dbdbc4ae70 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/9>>
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 27], ["record_type", "Movie"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7] Performing ActiveStorage::PurgeJob (Job ID: 7f3ef604-c48c-4410-8b6d-74ed7f54afa7) from Inline(default) with arguments: #<GlobalID:0x000055dbdbc69ca8 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/3>>
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 3], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 3]]
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 3], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7] [36m  S3 Storage (41.2ms) [0m[31mDeleted file from key: qqG6ZUJkFAdtAnqMYTqEK9Xc[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7] [36m  S3 Storage (56.4ms) [0m[31mDeleted files by key prefix: variants/qqG6ZUJkFAdtAnqMYTqEK9Xc/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [7f3ef604-c48c-4410-8b6d-74ed7f54afa7] Performed ActiveStorage::PurgeJob (Job ID: 7f3ef604-c48c-4410-8b6d-74ed7f54afa7) from Inline(default) in 102.25ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 7f3ef604-c48c-4410-8b6d-74ed7f54afa7) to Inline(default) with arguments: #<GlobalID:0x000055dbdbce3e18 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/3>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 25], ["record_type", "Movie"], ["name", "video"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6] Performing ActiveStorage::PurgeJob (Job ID: cfa8aeb7-0414-4bb5-9605-fd59c45936c6) from Inline(default) with arguments: #<GlobalID:0x000055dbdbd11d18 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/10>>
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 10], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 10]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 10], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6] [36m  S3 Storage (34.3ms) [0m[31mDeleted file from key: JQPq3esKkviJfX9JsawQk8L8[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [cfa8aeb7-0414-4bb5-9605-fd59c45936c6] Performed ActiveStorage::PurgeJob (Job ID: cfa8aeb7-0414-4bb5-9605-fd59c45936c6) from Inline(default) in 38.4ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: cfa8aeb7-0414-4bb5-9605-fd59c45936c6) to Inline(default) with arguments: #<GlobalID:0x000055dbdbd4e128 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/10>>
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 25], ["record_type", "Movie"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29] Performing ActiveStorage::PurgeJob (Job ID: c6e8507f-9e3f-40db-9ef2-1d6db3630e29) from Inline(default) with arguments: #<GlobalID:0x000055dbdbd69360 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29] [36m  S3 Storage (38.6ms) [0m[31mDeleted file from key: iMAyX1V3uyGfRWF9ZcobyunJ[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29] [36m  S3 Storage (32.9ms) [0m[31mDeleted files by key prefix: variants/iMAyX1V3uyGfRWF9ZcobyunJ/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [c6e8507f-9e3f-40db-9ef2-1d6db3630e29] Performed ActiveStorage::PurgeJob (Job ID: c6e8507f-9e3f-40db-9ef2-1d6db3630e29) from Inline(default) in 75.98ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: c6e8507f-9e3f-40db-9ef2-1d6db3630e29) to Inline(default) with arguments: #<GlobalID:0x000055dbdbddae48 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/1>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 30], ["record_type", "Movie"], ["name", "video"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.1ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0] Performing ActiveStorage::PurgeJob (Job ID: 2ce660b8-4377-41fb-ad43-68c2cd8dcbc0) from Inline(default) with arguments: #<GlobalID:0x000055dbd8e24258 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/11>>
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 11], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 11]]
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 11], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0] [36m  S3 Storage (37.9ms) [0m[31mDeleted file from key: Bk3xD6ag7g2i3RdyE5f49gsj[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [2ce660b8-4377-41fb-ad43-68c2cd8dcbc0] Performed ActiveStorage::PurgeJob (Job ID: 2ce660b8-4377-41fb-ad43-68c2cd8dcbc0) from Inline(default) in 42.23ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 2ce660b8-4377-41fb-ad43-68c2cd8dcbc0) to Inline(default) with arguments: #<GlobalID:0x000055dbdbe5fdc8 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/11>>
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 30], ["record_type", "Movie"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0] Performing ActiveStorage::PurgeJob (Job ID: 51116391-b772-450c-ac73-daecd63ed8b0) from Inline(default) with arguments: #<GlobalID:0x000055dbdbe8fca8 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/4>>
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 4], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 4]]
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 4], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0] [36m  S3 Storage (41.1ms) [0m[31mDeleted file from key: TSBCsz49DAEAm6Q1iuzagzg3[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0] [36m  S3 Storage (31.8ms) [0m[31mDeleted files by key prefix: variants/TSBCsz49DAEAm6Q1iuzagzg3/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [51116391-b772-450c-ac73-daecd63ed8b0] Performed ActiveStorage::PurgeJob (Job ID: 51116391-b772-450c-ac73-daecd63ed8b0) from Inline(default) in 77.63ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 51116391-b772-450c-ac73-daecd63ed8b0) to Inline(default) with arguments: #<GlobalID:0x000055dbd8c58488 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/4>>
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 26], ["record_type", "Movie"], ["name", "video"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad] Performing ActiveStorage::PurgeJob (Job ID: e91c5710-a2fd-43dc-b1d9-314b9aa74aad) from Inline(default) with arguments: #<GlobalID:0x000055dbdbf40f80 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/12>>
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 12], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 12]]
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 12], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad] [36m  S3 Storage (36.6ms) [0m[31mDeleted file from key: 8P1KZ936GNrGhdfRkWCVG7gJ[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [e91c5710-a2fd-43dc-b1d9-314b9aa74aad] Performed ActiveStorage::PurgeJob (Job ID: e91c5710-a2fd-43dc-b1d9-314b9aa74aad) from Inline(default) in 40.95ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: e91c5710-a2fd-43dc-b1d9-314b9aa74aad) to Inline(default) with arguments: #<GlobalID:0x000055dbd8b73130 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/12>>
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 26], ["record_type", "Movie"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mActiveStorage::Attachment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_attachments" WHERE "active_storage_attachments"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+[ActiveJob]   [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+[ActiveJob]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f] Performing ActiveStorage::PurgeJob (Job ID: 2583d897-2344-4851-94d6-947d3020871f) from Inline(default) with arguments: #<GlobalID:0x000055dbdbfbd300 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/5>>
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f]   [1m[36mActiveStorage::Attachment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."blob_id" = $1 LIMIT $2[0m  [["blob_id", 5], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f]   [1m[36mActiveStorage::Blob Destroy (0.2ms)[0m  [1m[31mDELETE FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1[0m  [["id", 5]]
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f]   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f]   [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 5], ["record_type", "ActiveStorage::Blob"], ["name", "preview_image"], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f]   ↳ db/seeds.rb:12
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f] [36m  S3 Storage (39.8ms) [0m[31mDeleted file from key: A7hPVPn4BaPaNHw3tUBLKnoD[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f] [36m  S3 Storage (32.3ms) [0m[31mDeleted files by key prefix: variants/A7hPVPn4BaPaNHw3tUBLKnoD/[0m
+[ActiveJob] [ActiveStorage::PurgeJob] [2583d897-2344-4851-94d6-947d3020871f] Performed ActiveStorage::PurgeJob (Job ID: 2583d897-2344-4851-94d6-947d3020871f) from Inline(default) in 76.45ms
+[ActiveJob] Enqueued ActiveStorage::PurgeJob (Job ID: 2583d897-2344-4851-94d6-947d3020871f) to Inline(default) with arguments: #<GlobalID:0x000055dbdc03f210 @uri=#<URI::GID gid://cineflix/ActiveStorage::Blob/5>>
+  [1m[36mGenre Load (0.9ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mGenre Destroy (0.2ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "genres" WHERE "genres"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[36mMovieGenre Load (1.1ms)[0m  [1m[34mSELECT "movie_genres".* FROM "movie_genres"[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMovieGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "movie_genres" WHERE "movie_genres"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMovieGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "movie_genres" WHERE "movie_genres"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMovieGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "movie_genres" WHERE "movie_genres"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMovieGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "movie_genres" WHERE "movie_genres"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMovieGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "movie_genres" WHERE "movie_genres"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMovieGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "movie_genres" WHERE "movie_genres"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMovieGenre Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movie_genres" WHERE "movie_genres"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMovieGenre Destroy (0.1ms)[0m  [1m[31mDELETE FROM "movie_genres" WHERE "movie_genres"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMyList Load (1.2ms)[0m  [1m[34mSELECT "my_lists".* FROM "my_lists"[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mMyList Destroy (0.2ms)[0m  [1m[31mDELETE FROM "my_lists" WHERE "my_lists"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mMyList Destroy (0.1ms)[0m  [1m[31mDELETE FROM "my_lists" WHERE "my_lists"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mMyList Destroy (0.1ms)[0m  [1m[31mDELETE FROM "my_lists" WHERE "my_lists"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "baejoohyun@gmail.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "okGQ1rJDJ8tryILMsTTd9w=="], ["LIMIT", 1]]
+  ↳ db/seeds.rb:18
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "baejoohyun@gmail.com"], ["password_digest", "$2a$12$V/A6ZZ8UlLstSLti3/3oE.5rRT8iXV1n/II9G4iRAP8LlwjgLlAIy"], ["session_token", "okGQ1rJDJ8tryILMsTTd9w=="], ["created_at", "2021-03-25 14:07:56.375525"], ["updated_at", "2021-03-25 14:07:56.375525"]]
+  ↳ db/seeds.rb:18
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:18
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "description", "created_at", "updated_at", "year") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Parasite"], ["description", "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan."], ["created_at", "2021-03-25 14:07:56.378334"], ["updated_at", "2021-03-25 14:07:56.378334"], ["year", 1991]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
