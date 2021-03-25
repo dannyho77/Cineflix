@@ -1,0 +1,12 @@
+.home-movie-box{
+    height: 600px;
+}
+
+.home-movie-box #home-movie-logo{
+    width: 350px;
+}
+
+.home-movie-box #home-movie-info{
+    font-size: 24px;
+    font-weight: 400;
+}

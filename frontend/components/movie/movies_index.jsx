@@ -34,7 +34,7 @@ class MoviesIndex extends React.Component{
                     </div>
             </div>
 
-            <HomeMovie />
+            <HomeMovie id='main-movie-player'/>
         </div>
         
         )
