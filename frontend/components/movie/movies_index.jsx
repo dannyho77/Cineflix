@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { SourceMapGenerator } from 'source-map';
 
 // import { logout } from '../../actions/session';
-import NavBar from '../nav_bar/nav_bar';
 import HomeMovie from './home_movie';
 
 
@@ -36,7 +35,6 @@ class MoviesIndex extends React.Component{
                     </div>
             </div> */}
 
-            <NavBar className='NavBar'/>
 
             <HomeMovie id='main-movie-player'/>
         </div>

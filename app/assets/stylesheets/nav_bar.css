@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: transparent;
+    background: linear-gradient(black, transparent);
 }
 
 .nav #logo{
@@ -10,6 +10,7 @@
     height: 65px;
     margin-top: 20px;
     margin-left: 45px;
+    z-index: 1;
 }
 
 .nav #github{
@@ -29,5 +30,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    z-index: 1;
 }
 
