@@ -1,24 +1,19 @@
+[logo]: https://fontmeme.com/permalink/210319/d1842af13f3a1a8770c2a1aabea4152d.png "Cineflix -- logo"
+
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Cineflix is a Netflix clone, built from scratch.
+The app features movie trailers/snippets, organized by genre.
+Logged in users can also add/remove movies to/from a personal saved list.
+Users may also search for movies by title.
+
+## Live link: [Cineflix](https://cineflix77.herokuapp.com/)
 
 Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
+* Discussion of technologies used
+* Delve into some core features (that show off your technical abilities)
+- discuss challenges faces and solutions implemented.
+* feature code snippets to highlight your best code
 * ...
+# 
