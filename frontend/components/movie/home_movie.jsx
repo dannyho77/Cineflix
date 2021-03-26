@@ -40,6 +40,7 @@ class HomeMovie extends React.Component{
                         <div id='home-movie-options'>
                             {/* <Link></Link>
                             <button></button> */}
+                            <Link to='/movies' id='play'> Play </Link>
                             <div>{sound}</div>
                         </div>
                     </div>

@@ -13,10 +13,31 @@
     margin-left: 50px;
 }
 
+.home-movie-box #home-movie-info{
+    margin-left: 50px;
+}
+
 .home-movie-box #main-movie-controls{
     font-size: 24px;
     font-weight: 400;
-    margin-left: 50px;
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
+}
+
+#home-movie-options #play{
+    background-color: white;
+    padding: 8px 39px;
+    border-radius: 3px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    border: none;
+    margin-left: 50px;
+    height: 45px;
+} 
+
+#play:hover{
+    opacity: 0.8;
 }
