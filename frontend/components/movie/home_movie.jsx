@@ -12,7 +12,7 @@ class HomeMovie extends React.Component{
 
     handleMute(e){
         e.preventDefault();
-        this.setState({muted:true})
+        this.setState({muted:!this.state.muted});
     }
 
     render(){
@@ -20,12 +20,12 @@ class HomeMovie extends React.Component{
         const { muted } = this.state;
 
         const sound = muted ? (
-            <button className="sound" onClick={this.changeMute}>
-                <i className="fas fa-volume-mute"></i>
+            <button className="sound-button" onClick={this.handleMute}>
+                <div className="fas fa-volume-mute"></div>
             </button>
             ) : (
-            <button className="sound" onClick={this.changeMute}>
-                <i className="fas fa-volume-up"></i>
+            <button className="sound-button" onClick={this.handleMute}>
+                <div className="fas fa-volume-up"></div>
             </button>
         );
 
@@ -33,15 +33,15 @@ class HomeMovie extends React.Component{
         return(
             <div className='home-movie-box'>
                     <NavBar className='NavBar'/>
-
+                    
                     <div id='main-movie-controls'>
                         <img id='home-movie-logo' src="https://picfiles.alphacoders.com/103/103394.png" />
                         <p id='home-movie-info'>When a sports agent has a moral epiphany and <br/> is fired for expressing it, he decides to put his <br/> new philosophy to the test.</p>
                         <div id='home-movie-options'>
                             {/* <Link></Link>
                             <button></button> */}
-                            <Link to='/movies' id='play'> Play </Link>
-                            <div>{sound}</div>
+                            <Link to='/movies' id='play'>Play</Link>
+                            {sound}
                         </div>
                     </div>
 
