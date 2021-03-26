@@ -1,6 +1,33 @@
 .nav {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.nav #logo{
+    justify-content: flex-start;
+    height: 65px;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.nav #github{
+    height: 60px;
+    margin-top: 3px;
+}
+
+.nav #linkedin{
+    height: 70px;
+    margin-top: 4px;
+    margin-right: 8px;
+}
+
+.nav .right-nav{
+    margin-left: auto;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
