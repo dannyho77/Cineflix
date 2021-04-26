@@ -84,6 +84,95 @@ summer_wars.photo.attach(io: file, filename: 'summerwars.jpeg')
 file = open('https://cineflix-dev.s3.amazonaws.com/summerwars_vid.mp4')
 summer_wars.video.attach(io: file, filename: 'summerwars_vid.mp4')
 
+6underground = Movie.create!(
+    title: "6 Underground",
+    description: "Six individuals from all around the globe, each the very best at what they do, have been chosen not only for their skill, but for a unique desire to delete their pasts to change the future.",
+    year: 2019 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/6underground.jpg')
+6underground.photo.attach(io: file, filename: '6underground.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/6underground_vid.mp4')
+6underground.video.attach(io: file, filename: '6underground_vid.mp4')
+
+21jumpstreet = Movie.create!(
+    title: "21 Jumpstreet",
+    description: "A pair of underachieving cops are sent back to a local high school to blend in and bring down a synthetic drug ring.",
+    year: 2012 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/21jumpstreet.jpeg')
+21jumpstreet.photo.attach(io: file, filename: '21jumpstreet.jpeg')
+file = open('https://cineflix-dev.s3.amazonaws.com/21jumpstreet_vid.mp4')
+21jumpstreet.video.attach(io: file, filename: '21jumpstreet_vid.mp4')
+
+bighero6 = Movie.create!(
+    title: "Big Hero 6",
+    description: "A special bond develops between plus-sized inflatable robot Baymax and prodigy Hiro Hamada, who together team up with a group of friends to form a band of high-tech heroes.",
+    year: 2014 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/bighero6.jpg')
+bighero6.photo.attach(io: file, filename: 'bighero6.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/bighero6_vid.mp4')
+bighero6.video.attach(io: file, filename: 'bighero6_vid.mp4')
+
+burning = Movie.create!(
+    title: "Burning",
+    description: "Jong-su bumps into a girl who used to live in the same neighborhood, who asks him to look after her cat while she's on a trip to Africa. When back, she introduces Ben, a mysterious guy she met there, who confesses his secret hobby.",
+    year: 2018 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/burning.jpg')
+burning.photo.attach(io: file, filename: 'burning.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/burning_vid.mp4')
+burning.video.attach(io: file, filename: 'burning_vid.mp4')
+
+celesteandjesseforever = Movie.create!(
+    title: "Celeste & Jesse Forever",
+    description: "A divorcing couple tries to maintain their friendship while they both pursue other people.",
+    year: 2012 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/celesteandjesseforever.jpg')
+celesteandjesseforever.photo.attach(io: file, filename: 'celesteandjesseforever.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/celesteandjesseforever_vid.mp4')
+celesteandjesseforever.video.attach(io: file, filename: 'celesteandjesseforever_vid.mp4')
+
+creed = Movie.create!(
+    title: "Creed",
+    description: "The former World Heavyweight Champion Rocky Balboa serves as a trainer and mentor to Adonis Johnson, the son of his late friend and former rival Apollo Creed.",
+    year: 2015 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/creed.jpg')
+creed.photo.attach(io: file, filename: 'creed.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/creed_vid.mp4')
+creed.video.attach(io: file, filename: 'creed_vid.mp4')
+
+demonslayer = Movie.create!(
+    title: "Demon Slayer: Mugen Train",
+    description: "After his family was brutally murdered and his sister turned into a demon, Tanjiro Kamado's journey as a demon slayer began. Tanjiro and his comrades embark on a new mission aboard the Mugen Train, on track to despair.",
+    year: 2020 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/demonslayer.jpg')
+demonslayer.photo.attach(io: file, filename: 'demonslayer.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/demonslayer_vid.mp4')
+demonslayer.video.attach(io: file, filename: 'demonslayer_vid.mp4')
+
+johnwick = Movie.create!(
+    title: "John Wick",
+    description: "An ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took everything from him.",
+    year: 2014 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/johnwick.jpg')
+johnwick.photo.attach(io: file, filename: 'johnwick.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/johnwick_vid.mp4')
+johnwick.video.attach(io: file, filename: 'johnwick_vid.mp4')
+
+neighbors = Movie.create!(
+    title: "Neighbors",
+    description: "After they are forced to live next to a fraternity house, a couple with a newborn baby do whatever they can to take them down.",
+    year: 2014 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/neighbors.jpg')
+neighbors.photo.attach(io: file, filename: 'neighbors.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/neighbors_vid.mp4')
+neighbors.video.attach(io: file, filename: 'neighbors_vid.mp4')
 
 #--------------------------------------------------
 # Genres
