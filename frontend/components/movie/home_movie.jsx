@@ -46,7 +46,7 @@ class HomeMovie extends React.Component{
                     </div>
 
                     <video muted={this.state.muted} autoPlay loop width='100%' height='680'>
-                        <source src="https://cineflix-dev.s3.amazonaws.com/sicario_vid.mp4" type="video/mp4" />
+                        <source src="https://cineflix-dev.s3.amazonaws.com/jerrymaguire_vid.mp4" type="video/mp4" />
                     </video>
             </div>
         )
