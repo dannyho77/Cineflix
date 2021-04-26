@@ -174,6 +174,16 @@ neighbors.photo.attach(io: file, filename: 'neighbors.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/neighbors_vid.mp4')
 neighbors.video.attach(io: file, filename: 'neighbors_vid.mp4')
 
+ninjaassassin = Movie.create!(
+    title: "Ninja Assassin",
+    description: "A young ninja turns his back on the orphanage that raised him, leading to a confrontation with a fellow ninja from the clan.",
+    year: 2009 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/ninjaassassin.jpg')
+ninjaassassin.photo.attach(io: file, filename: 'ninjaassassin.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/ninjaassassin_vid.mp4')
+ninjaassassin.video.attach(io: file, filename: 'ninjaassassin_vid.mp4')
+
 #--------------------------------------------------
 # Genres
     comedy = Genre.create({ genre: "Comedy"})
