@@ -184,6 +184,126 @@ ninjaassassin.photo.attach(io: file, filename: 'ninjaassassin.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/ninjaassassin_vid.mp4')
 ninjaassassin.video.attach(io: file, filename: 'ninjaassassin_vid.mp4')
 
+nostringsattached = Movie.create!(
+    title: "No Strings Attached",
+    description: "A guy and girl try to keep their relationship strictly physical, but it's not long before they learn that they want something more.",
+    year: 2011 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/nostringsattached.jpg')
+nostringsattached.photo.attach(io: file, filename: 'nostringsattached.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/nostringsattached_vid.mp4')
+nostringsattached.video.attach(io: file, filename: 'nostringsattached_vid.mp4')
+
+perksofbeingawallflower = Movie.create!(
+    title: "The Perks of Being a Wallflower",
+    description: "An introvert freshman is taken under the wings of two seniors who welcome him to the real world.",
+    year: 2012 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/perksofbeingawallflower.jpg')
+perksofbeingawallflower.photo.attach(io: file, filename: 'perksofbeingawallflower.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/perksofbeingawallflower_vid.mp4')
+perksofbeingawallflower.video.attach(io: file, filename: 'perksofbeingawallflower_vid.mp4')
+
+sicario = Movie.create!(
+    title: "Sicario",
+    description: "An idealistic FBI agent is enlisted by a government task force to aid in the escalating war against drugs at the border area between the U.S. and Mexico.",
+    year: 2015 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/sicario.jpeg')
+sicario.photo.attach(io: file, filename: 'sicario.jpeg')
+file = open('https://cineflix-dev.s3.amazonaws.com/sicario_vid.mp4')
+sicario.video.attach(io: file, filename: 'sicario_vid.mp4')
+
+silverliningsplaybook = Movie.create!(
+    title: "Silver Linings Playbook",
+    description: "After a stint in a mental institution, former teacher Pat Solitano moves back in with his parents and tries to reconcile with his ex-wife. Things get more challenging when Pat meets Tiffany, a mysterious girl with problems of her own.",
+    year: 2012 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/silverliningsplaybook.jpg')
+silverliningsplaybook.photo.attach(io: file, filename: 'silverliningsplaybook.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/silverliningsplaybook_vid.mp4')
+silverliningsplaybook.video.attach(io: file, filename: 'silverliningsplaybook_vid.mp4')
+
+spiderverse = Movie.create!(
+    title: "Spider-Man: Into the Spider-Verse",
+    description: "Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.",
+    year: 2018 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/spiderverse.jpeg')
+spiderverse.photo.attach(io: file, filename: 'spiderverse.jpeg')
+file = open('https://cineflix-dev.s3.amazonaws.com/spiderverse_vid.mp4')
+spiderverse.video.attach(io: file, filename: 'spiderverse_vid.mp4')
+
+stayhungry = Movie.create!(
+    title: "Sebastian Maniscalco: Stay Hungry",
+    description: "Sebastian's captivating storytelling keeps the audience engaged as he unpacks spin classes, pregnancy photoshoots, and wedding dances.",
+    year: 2019 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/stayhungry.jpg')
+stayhungry.photo.attach(io: file, filename: 'stayhungry.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/stayhungry_vid.mp4')
+stayhungry.video.attach(io: file, filename: 'stayhungry_vid.mp4')
+
+swat = Movie.create!(
+    title: "S.W.A.T.",
+    description: "An imprisoned drug kingpin offers a huge cash reward to anyone that can break him out of police custody, and only the L.A.P.D.'s Special Weapons and Tactics team can prevent it.",
+    year: 2003 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/swat.jpg')
+swat.photo.attach(io: file, filename: 'swat.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/swat_vid.mp4')
+swat.video.attach(io: file, filename: 'swat_vid.mp4')
+
+themanfromnowhere = Movie.create!(
+    title: "The Man From Nowhere",
+    description: "A quiet pawnshop keeper with a violent past takes on a drug-and-organ trafficking ring in hope of saving the child who is his only friend.",
+    year: 2010 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/themanfromnowhere.jpg')
+themanfromnowhere.photo.attach(io: file, filename: 'themanfromnowhere.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/themanfromnowhere_vid.mp4')
+themanfromnowhere.video.attach(io: file, filename: 'themanfromnowhere_vid.mp4')
+
+weatheringwithyou = Movie.create!(
+    title: "Weathering With You",
+    description: "A high-school boy who has run away to Tokyo befriends a girl who appears to be able to manipulate the weather.",
+    year: 2019 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/weatheringwithyou.jpg')
+weatheringwithyou.photo.attach(io: file, filename: 'weatheringwithyou.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/weatheringwithyou_vid.mp4')
+weatheringwithyou.video.attach(io: file, filename: 'weatheringwithyou_vid.mp4')
+
+whatnow = Movie.create!(
+    title: "Kevin Hart: What Now?",
+    description: "Comedian Kevin Hart performs in front of a crowd of 53,000 people at Philadelphia's outdoor venue, Lincoln Financial Field.",
+    year: 2016 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/whatnow.jpg')
+whatnow.photo.attach(io: file, filename: 'whatnow.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/whatnow_vid.mp4')
+whatnow.video.attach(io: file, filename: 'whatnow_vid.mp4')
+
+whenwefirstmet = Movie.create!(
+    title: "When We First Met",
+    description: "Noah meets Avery at a Halloween party and falls in love but gets friend-zoned. 3 years later, she's engaged to someone else. Noah returns in a time machine to fix things.",
+    year: 2018 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/whenwefirstmet.jpg')
+whenwefirstmet.photo.attach(io: file, filename: 'whenwefirstmet.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/whenwefirstmet_vid.mp4')
+whenwefirstmet.video.attach(io: file, filename: 'whenwefirstmet_vid.mp4')
+
+yourname = Movie.create!(
+    title: "Your Name.",
+    description: "Two strangers find themselves linked in a bizarre way. When a connection forms, will distance be the only thing to keep them apart?",
+    year: 2016 
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/yourname.jpg')
+yourname.photo.attach(io: file, filename: 'yourname.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/yourname_vid.mp4')
+yourname.video.attach(io: file, filename: 'yourname_vid.mp4')
+
 #--------------------------------------------------
 # Genres
     comedy = Genre.create({ genre: "Comedy"})
