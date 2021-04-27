@@ -84,35 +84,35 @@ summer_wars.photo.attach(io: file, filename: 'summerwars.jpeg')
 file = open('https://cineflix-dev.s3.amazonaws.com/summerwars_vid.mp4')
 summer_wars.video.attach(io: file, filename: 'summerwars_vid.mp4')
 
-6underground = Movie.create!(
+sixunderground = Movie.create!(
     title: "6 Underground",
     description: "Six individuals from all around the globe, each the very best at what they do, have been chosen not only for their skill, but for a unique desire to delete their pasts to change the future.",
     year: 2019 
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/6underground.jpg')
-6underground.photo.attach(io: file, filename: '6underground.jpg')
+sixunderground.photo.attach(io: file, filename: '6underground.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/6underground_vid.mp4')
-6underground.video.attach(io: file, filename: '6underground_vid.mp4')
+sixunderground.video.attach(io: file, filename: '6underground_vid.mp4')
 
-21jumpstreet = Movie.create!(
+jumpstreet = Movie.create!(
     title: "21 Jumpstreet",
     description: "A pair of underachieving cops are sent back to a local high school to blend in and bring down a synthetic drug ring.",
     year: 2012 
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/21jumpstreet.jpeg')
-21jumpstreet.photo.attach(io: file, filename: '21jumpstreet.jpeg')
+jumpstreet.photo.attach(io: file, filename: '21jumpstreet.jpeg')
 file = open('https://cineflix-dev.s3.amazonaws.com/21jumpstreet_vid.mp4')
-21jumpstreet.video.attach(io: file, filename: '21jumpstreet_vid.mp4')
+jumpstreet.video.attach(io: file, filename: '21jumpstreet_vid.mp4')
 
-bighero6 = Movie.create!(
+bigherosix = Movie.create!(
     title: "Big Hero 6",
     description: "A special bond develops between plus-sized inflatable robot Baymax and prodigy Hiro Hamada, who together team up with a group of friends to form a band of high-tech heroes.",
     year: 2014 
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/bighero6.jpg')
-bighero6.photo.attach(io: file, filename: 'bighero6.jpg')
+bigherosix.photo.attach(io: file, filename: 'bighero6.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/bighero6_vid.mp4')
-bighero6.video.attach(io: file, filename: 'bighero6_vid.mp4')
+bigherosix.video.attach(io: file, filename: 'bighero6_vid.mp4')
 
 burning = Movie.create!(
     title: "Burning",
@@ -322,6 +322,36 @@ yourname.video.attach(io: file, filename: 'yourname_vid.mp4')
     MovieGenre.create(movie_id: the_outlaws.id, genre_id: action.id)
     MovieGenre.create(movie_id: summer_wars.id, genre_id: animation.id)
     MovieGenre.create(movie_id: jerry_maguire.id, genre_id: comedy.id)
+    MovieGenre.create(movie_id: sixunderground.id, genre_id: action.id)
+    MovieGenre.create(movie_id: jumpstreet.id, genre_id: comedy.id)
+    MovieGenre.create(movie_id: bigherosix.id, genre_id: animation.id)
+    MovieGenre.create(movie_id: burning.id, genre_id: drama.id)
+    MovieGenre.create(movie_id: celesteandjesseforever.id, genre_id: romance.id)
+    MovieGenre.create(movie_id: celesteandjesseforever.id, genre_id: comedy.id)
+    MovieGenre.create(movie_id: creed.id, genre_id: drama.id)
+    MovieGenre.create(movie_id: creed.id, genre_id: action.id)
+    MovieGenre.create(movie_id: demonslayer.id, genre_id: animation.id)
+    MovieGenre.create(movie_id: johnwick.id, genre_id: action.id)
+    MovieGenre.create(movie_id: neighbors.id, genre_id: comedy.id)
+    MovieGenre.create(movie_id: ninjaassassin.id, genre_id: action.id)
+    MovieGenre.create(movie_id: nostringsattached.id, genre_id: romance.id)
+    MovieGenre.create(movie_id: nostringsattached.id, genre_id: comedy.id)
+    MovieGenre.create(movie_id: perksofbeingawallflower.id, genre_id: drama.id)
+    MovieGenre.create(movie_id: sicario.id, genre_id: action.id)
+    MovieGenre.create(movie_id: sicario.id, genre_id: drama.id)
+    MovieGenre.create(movie_id: silverliningsplaybook.id, genre_id: romance.id)
+    MovieGenre.create(movie_id: silverliningsplaybook.id, genre_id: comedy.id)
+    MovieGenre.create(movie_id: spiderverse.id, genre_id: animation.id)
+    MovieGenre.create(movie_id: spiderverse.id, genre_id: action.id)
+    MovieGenre.create(movie_id: stayhungry.id, genre_id: comedy.id)
+    MovieGenre.create(movie_id: swat.id, genre_id: action.id)
+    MovieGenre.create(movie_id: themanfromnowhere.id, genre_id: action.id)
+    MovieGenre.create(movie_id: weatheringwithyou.id, genre_id: animation.id)
+    MovieGenre.create(movie_id: whatnow.id, genre_id: comedy.id)
+    MovieGenre.create(movie_id: whenwefirstmet.id, genre_id: romance.id)
+    MovieGenre.create(movie_id: whenwefirstmet.id, genre_id: comedy.id)
+    MovieGenre.create(movie_id: yourname.id, genre_id: animation.id)
+    MovieGenre.create(movie_id: yourname.id, genre_id: romance.id)
 
 #--------------------------------------------------
 # My_Lists
