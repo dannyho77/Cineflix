@@ -10,18 +10,18 @@
 
 .home-movie-box #home-movie-logo{
     width: 350px;
-    margin-left: 50px;
+    margin-left: 65px;
 }
 
 .home-movie-box #home-movie-info{
-    margin-left: 50px;
+    margin-left: 65px;
 }
 
 .home-movie-box #main-movie-controls{
     font-size: 24px;
     font-weight: 400;
     position: absolute;
-    bottom: 50px;
+    bottom: 400px;
     width: 100%;
 }
 
@@ -46,7 +46,7 @@
     font-size: 18px;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     border: none;
-    margin-left: 50px;
+    margin-left: 65px;
     height: 23px;
 } 
 
