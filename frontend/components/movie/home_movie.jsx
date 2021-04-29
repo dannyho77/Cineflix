@@ -38,9 +38,7 @@ class HomeMovie extends React.Component{
                         <img id='home-movie-logo' src="https://cineflix-dev.s3.amazonaws.com/summerwars_logo.png" />
                         <p id='home-movie-info'>A student tries to fix a problem he accidentally <br/> caused in OZ, a digital world. If he doesn't, <br/> global havoc will ensue.</p>
                         <div id='home-movie-options'>
-                            {/* <button> */}
-                                <Link to='/movies' id='play'>Play</Link>
-                            {/* </button> */}
+                                <Link to='/movies' id='play'><span className='ltr-zd4xih'>Play</span></Link>
                             {sound}
                         </div>
                     </div>

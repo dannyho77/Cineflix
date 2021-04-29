@@ -12,6 +12,19 @@ const logoutCurrentUser = () => ({
     type: LOGOUT_CURRENT_USER,
 })
 
+// export const receiveErrors = errors => {
+//     return {
+//       type: RECEIVE_ERRORS,
+//       errors
+//     };
+//   };
+  
+//   export const clearErrors = () => {
+//     return {
+//       type: CLEAR_ERRORS
+//     }
+//   }
+
 export const createNewUser = formUser => dispatch => postUser(formUser)
     .then(user => dispatch(receiveCurrentUser(user)));
 
