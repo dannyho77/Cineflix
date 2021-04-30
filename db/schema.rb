@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_24_132904) do
+ActiveRecord::Schema.define(version: 2021_04_29_180009) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,9 @@ ActiveRecord::Schema.define(version: 2021_03_24_132904) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "year"
+    t.string "rating"
+    t.string "runtime"
+    t.index ["title"], name: "index_movies_on_title"
   end
 
   create_table "my_lists", force: :cascade do |t|

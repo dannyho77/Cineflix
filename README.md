@@ -1,4 +1,4 @@
-[logo]: https://fontmeme.com/permalink/210319/d1842af13f3a1a8770c2a1aabea4152d.png "Cineflix -- logo"
+[logo]: https://cineflix-dev.s3.amazonaws.com/logo.png "Cineflix -- logo"
 
 # README
 

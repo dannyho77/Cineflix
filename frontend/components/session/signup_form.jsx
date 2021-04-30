@@ -35,7 +35,7 @@ class SignupForm extends React.Component {
         return(
           <div className='signup-form-body'>
               <div className='NavBar'>
-                    <Link to='/'><img id='logo' src="https://fontmeme.com/permalink/210319/d1842af13f3a1a8770c2a1aabea4152d.png"/></Link>
+                    <Link to='/'><img id='logo' src="https://cineflix-dev.s3.amazonaws.com/logo.png"/></Link>
                     <div className='right-nav'>
                         <a href="https://github.com/dannyho77"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" id="github"/></a>
                         <a href="https://www.linkedin.com/in/danny-ho-a4988360"><img src="https://cdn2.iconfinder.com/data/icons/simple-social-media-shadow/512/14-512.png" id="linkedin"/></a>
