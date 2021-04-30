@@ -10,6 +10,13 @@ class Api::UsersController < ApplicationController
         end
     end
 
+    def destroy
+        if current_user
+          logout
+          render json: ["Logged out!"]
+        end
+    end
+
     private
     def user_params
         params.require(:user).permit(:email, :password)
