@@ -1,13 +1,12 @@
 [logo]: https://cineflix-dev.s3.amazonaws.com/logo.png "Cineflix -- logo"
 
-# README
+# CINEFLIX
+[Live Link](https://cineflix77.herokuapp.com/)
 
 Cineflix is a Netflix clone, built from scratch.
-The app features movie trailers/snippets, organized by genre.
-Logged in users can also add/remove movies to/from a personal saved list.
+The app features movie trailers/clips, organized by genre.
+Logged in users can also add/remove movies to/from a personal list.
 Users may also search for movies by title.
-
-## Live link: [Cineflix](https://cineflix77.herokuapp.com/)
 
 Things you may want to cover:
 
