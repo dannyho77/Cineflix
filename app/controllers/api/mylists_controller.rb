@@ -1,11 +1,13 @@
 class Api::MylistsController < ApplicationController
 
     def show
+        @mylist = MyList.find_by(id: params[:id])
         render :show
     end
 
     def index
         @mylists = MyList.all
+        render :index
     end
 
     def create
