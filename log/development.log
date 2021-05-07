@@ -26227,3 +26227,23 @@ Processing by Api::SessionsController#create as JSON
 Completed 200 OK in 427ms (Views: 205.5ms | ActiveRecord: 5.7ms)
 
 
+Started GET "/" for ::1 at 2021-05-07 16:01:36 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /root/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.5/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.7ms)
+Started GET "/" for ::1 at 2021-05-07 16:01:40 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "3EN6P8oolQdHHwiUUuWd5w=="], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "3EN6P8oolQdHHwiUUuWd5w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 19680ms (Views: 19623.1ms | ActiveRecord: 7.9ms)
+
+
+Completed 200 OK in 16117ms (Views: 16041.1ms | ActiveRecord: 14.0ms)
+
+

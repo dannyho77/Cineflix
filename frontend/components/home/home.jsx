@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import NavBar from '../nav_bar/nav_bar'
+// import NavBar from '../nav_bar/nav_bar';
 
 class Home extends React.Component {
     constructor(props) {
@@ -27,8 +27,7 @@ class Home extends React.Component {
     }
 
       render(){
-
-// this is 'declarative routing' (https://reactrouter.com/web/api/Redirect)
+        // this is 'declarative routing' (https://reactrouter.com/web/api/Redirect)
         if (this.state.redirect) {
           return <Redirect to={
             {pathname: '/signup',

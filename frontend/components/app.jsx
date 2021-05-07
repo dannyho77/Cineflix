@@ -12,7 +12,7 @@ import { Route,
 // import EditReportFormContainer from './reports/edit_report_form_container';
 // import ReportShowContainer from './reports/report_show_container';
 import LoginFormContainer from '../components/session/login_form_container';
-import SignupFormContainer from './session/signup_form_container';
+import SignupFormContainer from '../components/session/signup_form_container';
 import home from '../components/home/home';
 import MoviesIndexContainer from '../components/movie/movies_index';
 import MovieShowContainer from '../components/movie/movie_show';
