@@ -1,14 +1,13 @@
-// import { connect } from 'react-redux';
-// import React from 'react';
-// import { Link, withRouter } from 'react-router-dom';
-// import { goToSignup } from '../../actions/home';
-// import home from './home';
+import React from 'react';
+import { connect } from 'react-redux';
+import { login } from '../../actions/session';
+import Home from './home';
 
   
-//   const mapDispatchToProps = dispatch => {
-//     return {
-//       action: (email) => dispatch(goToSignup(email)),
-//     };
-//   };
+  const mapDispatchToProps = (dispatch) => {
+    return {
+      login: (user) => dispatch(login(user))
+    };
+  };
   
-//   export default withRouter(connect(mapDispatchToProps)(home));
+  export default connect(null, mapDispatchToProps)(Home);

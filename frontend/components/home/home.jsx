@@ -26,6 +26,7 @@ class Home extends React.Component {
         };
     }
 
+
       render(){
         // this is 'declarative routing' (https://reactrouter.com/web/api/Redirect)
         if (this.state.redirect) {
