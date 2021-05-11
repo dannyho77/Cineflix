@@ -13,8 +13,8 @@ import { Route,
 // import ReportShowContainer from './reports/report_show_container';
 import LoginFormContainer from '../components/session/login_form_container';
 import SignupFormContainer from '../components/session/signup_form_container';
-import home from '../components/home/home';
-import MoviesIndexContainer from '../components/movie/movies_index';
+import home from '../components/home/home_container';
+import MoviesIndexContainer from '../components/movie/movies_index_container';
 import MovieShowContainer from '../components/movie/movie_show';
 import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 

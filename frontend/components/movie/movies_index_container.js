@@ -11,7 +11,7 @@ props of the same name.
 */
 
 const mSTP = state => ({
-  movies: Object.values(state.movies)
+  movies: Object.values(state.entities.movies)
 })
 
 const mDTP = dispatch => ({
