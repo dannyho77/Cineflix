@@ -1,5 +1,5 @@
 import * as Actions from '../actions/mylists';
-
+import { merge } from 'lodash';
 
 export default (state = {}, action) => {
     Object.freeze(state);
