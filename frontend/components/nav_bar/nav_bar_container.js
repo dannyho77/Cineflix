@@ -5,7 +5,7 @@ import { logout } from '../../actions/session';
 import { withRouter } from 'react-router-dom';
 
 const mstp = state => ({
-    currentUser: state.session.currentUser
+    currentUser: state.sessions.currentUser
 });
 
 const mdtp = dispatch => ({

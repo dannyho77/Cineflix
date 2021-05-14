@@ -4,9 +4,9 @@ export const RECEIVE_MYLISTS = 'RECEIVE_MYLISTS';
 export const ADD_MYLIST = 'ADD_MYLIST';
 export const REMOVE_MYLIST = 'REMOVE_MYLIST';
 
-export const receiveMyLists = movies => ({
+export const receiveMyLists = mylists => ({
     type: RECEIVE_MYLISTS,
-    movies
+    mylists
 })
 
 export const addMyList = movieId => ({
@@ -19,9 +19,9 @@ export const removeMyList = movieId => ({
     movieId
 })
 
-export const fetchMyLists = (movies) => dispatch => (
-    APIUtil.fetchLists(movies).then(movies => (
-      dispatch(receiveMyLists(movies))
+export const fetchMyLists = () => dispatch => (
+    APIUtil.fetchLists().then(mylists => (
+      dispatch(receiveMyLists(mylists))
     ))
   );
   
