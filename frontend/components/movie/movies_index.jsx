@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SourceMapGenerator } from 'source-map';
+// import { SourceMapGenerator } from 'source-map';
 
 // import { logout } from '../../actions/session';
 import HomeMovie from './home_movie';
@@ -9,8 +9,8 @@ import HomeMovie from './home_movie';
 class MoviesIndex extends React.Component{
 
     constructor(props){
-        super(props)
-        this.state = {movies: []}
+        super(props);
+        this.state = {movies: []};
         // this.logout = this.logout.bind(this);
     }
     // componentDidMount(){
