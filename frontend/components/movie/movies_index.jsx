@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 // import { logout } from '../../actions/session';
 import HomeMovie from './home_movie';
+import GenreContainer from '../genre/genre_container';
 
 
 class MoviesIndex extends React.Component{
@@ -37,7 +38,13 @@ class MoviesIndex extends React.Component{
 
             <HomeMovie id='main-movie-player'/>
 
-            
+            <div>
+                {this.props.genres.map(genre => {
+                    return(
+                        <GenreContainer genreId={genre.id} genres={this.props.genres} fetchGenres={this.props.fetchGenres}/>
+                    );
+                })}
+            </div>
         </div>
         
         )

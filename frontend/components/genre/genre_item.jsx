@@ -38,7 +38,7 @@ class GenreItem extends React.Component {
     }
 
     render(){
-        const {movie, mylists, previewing} = this.props;
+        const {movie, mylists} = this.props;
         const mylist = mylists.find(mylist => {
             mylist.movie_id === movie.id
         });

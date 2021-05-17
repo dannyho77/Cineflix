@@ -4,7 +4,7 @@ import { withRouter } from "react-router-dom";
 import {fetchGenre} from "../../actions/genres";
 import {fetchMyLists, addToMyList, removeFromMyList} from "../../actions/mylists";
 import selectMovies from "../../reducers/selectmovie";
-import Genre from "./genre_module";
+import GenreModule from "./genre_module";
 
 const mstp = (state, ownProps) => {
   const genreId = ownProps.genreId || ownProps.match.params.genreId;
@@ -28,4 +28,4 @@ const mdtp = (dispatch) => {
   };
 };
 
-export default withRouter(connect(mstp, mdtp)(Genre));
+export default withRouter(connect(mstp, mdtp)(GenreModule));
