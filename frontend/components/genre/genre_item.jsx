@@ -56,10 +56,14 @@ class GenreItem extends React.Component {
         );
 
         const listbutton = (
-            <button>
-                
+            <button onClick = {this.handleAddRemove}>
+                { mylist? (
+                    <i className="far fa-times-circle"></i>
+                ) : (
+                    <i className="fas fa-plus-circle"></i>
+                )}
             </button>
-        )
+        );
 
         const preview = (
             <div className = "single-movie">
@@ -70,10 +74,13 @@ class GenreItem extends React.Component {
                     </video>
                 </Link>
                 <div className ="single-movie-controls">
-
+                    <Link to = {`/movies/${movie.id}`}>
+                        <i class="fas fa-play-circle"></i>
+                    </Link>
+                    {listbutton}
                 </div>
                 <div className ="single-movie-info">
-
+                    {movie.rating}<Text>{'\u2B24'}</Text>{movie.year}<Text>{'\u2B24'}</Text>{movie.runtime}
                 </div>
             </div>
         );
@@ -85,3 +92,5 @@ class GenreItem extends React.Component {
         );
     }
 }
+
+export default GenreItem;

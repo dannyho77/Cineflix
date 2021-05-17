@@ -26683,3 +26683,12 @@ Processing by StaticPagesController#root as HTML
 Completed 200 OK in 36200ms (Views: 36150.4ms | ActiveRecord: 5.1ms)
 
 
+Started GET "/" for ::1 at 2021-05-17 18:20:00 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "3EN6P8oolQdHHwiUUuWd5w=="], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7
+Completed 200 OK in 2116ms (Views: 2046.0ms | ActiveRecord: 1.8ms)
+
+
