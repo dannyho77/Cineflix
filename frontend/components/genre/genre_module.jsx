@@ -4,7 +4,7 @@ import GenreItem from './genre_item';
 class GenreModule extends React.Component {
     constructor(props) {
         super(props);
-
+        debugger
     }
 
     render(){
@@ -12,10 +12,11 @@ class GenreModule extends React.Component {
 
         return(
             <div className = "single-genre-module">
+                
                 <p>{genre.genre}</p>
 
                 <div>
-                {movies.map((movie, idx) => {
+                {movies.map(movie => {
                     return(
                         <GenreItem
                             movie = {movie}
@@ -27,6 +28,7 @@ class GenreModule extends React.Component {
                     );
                 })}
                 </div>
+                <p>TESTINGTESTINGTESTINGTESTINGTESTING</p>
             </div>
         )
     }

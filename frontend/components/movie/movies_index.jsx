@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 // import { logout } from '../../actions/session';
 import HomeMovie from './home_movie';
-import GenreModule from '../genre/genre_module';
+import GenreContainer from '../genre/genre_container';
 
 
 class MoviesIndex extends React.Component{
@@ -14,9 +14,11 @@ class MoviesIndex extends React.Component{
         this.state = {movies: []};
         // this.logout = this.logout.bind(this);
     }
-    // componentDidMount(){
-    //     this.props.fetchMovies()
-    // }
+
+    componentDidMount(){
+        debugger
+        this.props.fetchGenres().then(res => console.log(res))
+    }
 
     // logout(dispatch){
     //     return (user) => dispatch(login(user));
@@ -39,11 +41,12 @@ class MoviesIndex extends React.Component{
             <HomeMovie id='main-movie-player'/>
 
             <div>
-                {this.props.genres.map(genre => {
+                {/* {this.props.genres.map(genre => {
                     return(
-                        <GenreModule />
+                        <GenreModule genre={genre}/>
                     );
-                })}
+                })} */}
+                {/* <GenreContainer /> */}
             </div>
         </div>
         

@@ -9,8 +9,8 @@ const receiveGenre = genre => ({
 })
 
 const receiveGenres = genres => ({
-  type: RECEIVE_GENRES,
-  genres
+    type: RECEIVE_GENRES,
+    genres
 })
 
 
