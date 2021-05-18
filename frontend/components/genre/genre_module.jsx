@@ -8,15 +8,21 @@ class GenreModule extends React.Component {
     }
 
     render(){
-        const {genre, movies} = this.props;
-
+        const {genre, movies, genres} = this.props;
+        console.log(genres);
         return(
             <div className = "single-genre-module">
                 
-                <p>{genre.genre}</p>
+                {Object.keys(genres).map(genre => {
+                    return (
+                        <div>
+                        {genres[genre].genre}
+                        </div>
+                        )
+                })}
 
                 <div>
-                {movies.map(movie => {
+                {/* {movies.map(movie => {
                     return(
                         <GenreItem
                             movie = {movie}
@@ -26,9 +32,9 @@ class GenreModule extends React.Component {
                             currentUser = {this.props.currentUser}
                         />
                     );
-                })}
+                })} */}
                 </div>
-                <p>TESTINGTESTINGTESTINGTESTINGTESTING</p>
+                
             </div>
         )
     }

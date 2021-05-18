@@ -11,21 +11,23 @@ class MoviesIndex extends React.Component{
 
     constructor(props){
         super(props);
-        this.state = {movies: []};
+        this.state = {genres: [], movies: []};
         // this.logout = this.logout.bind(this);
     }
 
     componentDidMount(){
         debugger
-        this.props.fetchGenres().then(res => console.log(res))
+        this.props.fetchGenres()
+        this.props.fetchMovies().then(res => console.log(res))
     }
 
     // logout(dispatch){
     //     return (user) => dispatch(login(user));
     // }
-
+    
     render(){
-
+        console.log(Object.keys(this.state.genres));
+        let test = Object.keys(this.state.genres)>0 ? <GenreContainer /> : 'hello';
         return (
         <div className='movies-index'>
 
@@ -46,7 +48,7 @@ class MoviesIndex extends React.Component{
                         <GenreModule genre={genre}/>
                     );
                 })} */}
-                {/* <GenreContainer /> */}
+                <GenreContainer />
             </div>
         </div>
         

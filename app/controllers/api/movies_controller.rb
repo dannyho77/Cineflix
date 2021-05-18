@@ -2,6 +2,7 @@ class Api::MoviesController < ApplicationController
 
     def index
         @movies = Movie.all
+        debugger
         render :index
     end
 
