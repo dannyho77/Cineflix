@@ -17,8 +17,8 @@ class MoviesIndex extends React.Component{
 
     componentDidMount(){
         debugger
-        this.props.fetchGenres()
-        this.props.fetchMovies().then(res => console.log(res))
+        this.props.fetchGenres().then(this.props.fetchMovies());
+        // this.props.fetchMovies().then(res => console.log(res))
     }
 
     // logout(dispatch){
@@ -26,8 +26,7 @@ class MoviesIndex extends React.Component{
     // }
     
     render(){
-        console.log(Object.keys(this.state.genres));
-        let test = Object.keys(this.state.genres)>0 ? <GenreContainer /> : 'hello';
+        
         return (
         <div className='movies-index'>
 
@@ -48,7 +47,7 @@ class MoviesIndex extends React.Component{
                         <GenreModule genre={genre}/>
                     );
                 })} */}
-                <GenreContainer />
+                {this.props.movies.length>0 && this.props.genres.length>0 ? <GenreContainer /> : ''}
             </div>
         </div>
         

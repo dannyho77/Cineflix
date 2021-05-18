@@ -9,14 +9,31 @@ class GenreModule extends React.Component {
 
     render(){
         const {genre, movies, genres} = this.props;
+        let a;
+        if(Object.keys(movies)>0){
+            debugger
+            
+        }
+
         console.log(genres);
+        console.log(movies);
+        debugger
         return(
             <div className = "single-genre-module">
                 
-                {Object.keys(genres).map(genre => {
+                {Object.keys(genres).map(id => {
                     return (
                         <div>
-                        {genres[genre].genre}
+                        {genres[id].genre}
+                        {genres[id].movie_ids.map(movId => {
+                            return(
+                                <div>
+                                {movies[movId].title}
+                                    <img src={movies[movId].photoURL}/>
+                                    <video autoPlay><source src={movies[movId].movieURL} type="video/mp4" /></video>
+                                </div>
+                            )
+                        })}
                         </div>
                         )
                 })}

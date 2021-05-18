@@ -15,6 +15,7 @@ const mstp = (state, ownProps) => {
     // genreId,
     // movies: selectMovies(state, genre),
     genres: state.entities.genres,
+    movies: state.entities.movies,
     currentUser: state.sessions.currentUser,
     mylists: Object.values(state.entities.mylists)
   });
