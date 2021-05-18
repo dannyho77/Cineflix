@@ -8,7 +8,7 @@ import GenreModule from "./genre_module";
 
 const mstp = (state, ownProps) => {
   const genreId = ownProps.genreId || ownProps.match.params.genreId;
-  let genre = state.entities.genres[genreId]
+  const genre = state.entities.genres[genreId];
 
   return ({
     genre,
