@@ -10,19 +10,19 @@ class GenreModule extends React.Component {
     render(){
         const {genre, movies, genres} = this.props;
 
-        console.log(genres);
-        console.log(movies);
+        // console.log(genres);
+        // console.log(movies);
         
         return(
             <div className = "single-genre-module">
                 
                 {Object.keys(genres).map(id => {
                     return (
-                        <div>
+                        <div key={id}>
                         {genres[id].genre}
                         {genres[id].movie_ids.map(movId => {
                             return(
-                                <div>
+                                <div key={movId}>
                                 {movies[movId].title}
                                     <img src={movies[movId].photoURL}/>
                                 </div>
@@ -32,8 +32,8 @@ class GenreModule extends React.Component {
                         )
                 })}
 
-                <div>
-                {/* {movies.map(movie => {
+                {/* <div>
+                {movies.map(movie => {
                     return(
                         <GenreItem
                             movie = {movie}
@@ -43,8 +43,8 @@ class GenreModule extends React.Component {
                             currentUser = {this.props.currentUser}
                         />
                     );
-                })} */}
-                </div>
+                })}
+                </div> */}
                 
             </div>
         )
