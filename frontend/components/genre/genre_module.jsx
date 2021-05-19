@@ -8,22 +8,25 @@ class GenreModule extends React.Component {
     }
 
     render(){
-        const {genre, movies, genres} = this.props;
+        const {genres, movies, mylists, currentUser, addToMyList, removeFromMyList} = this.props;
 
-        // console.log(genres);
-        // console.log(movies);
-        
         return(
             <div className = "single-genre-module">
                 
                 {Object.keys(genres).map(id => {
                     return (
-                        <div key={id}>
+                        <div key = {id}>
                         {genres[id].genre}
                         {genres[id].movie_ids.map(movId => {
                             return(
-                                <div key={movId}>
-                                <GenreItem movie={movies[movId]}/>
+                                <div key = {movId}>
+                                <GenreItem 
+                                    movie = {movies[movId]}
+                                    mylists = {mylists}
+                                    currentUser = {currentUser}
+                                    addToMyList = {addToMyList}
+                                    removeFromMyList = {removeFromMyList}
+                                />
                                 </div>
                             )
                         })}

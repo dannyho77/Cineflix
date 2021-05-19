@@ -38,13 +38,15 @@ class GenreItem extends React.Component {
     }
 
     render(){
-        const {movie, mylists} = this.props;
-        debugger
-        const mylist = mylists.find(mylist => {
+        const {movie, mylists, movies} = this.props;
+        const listarr = Object.keys(mylists);
+        const mylist = listarr.find(mylist => {
             mylist.movie_id === movie.id
         });
+        
         const thumbnail = <img src={movie.photoURL} />;
-        const previewing = this.state.preview === movie.id;
+        const {muted} = this.state;
+        const previewing = (this.state.preview === movie.id);
 
         const sound = muted ? (
             <button className="sound-button" onClick={this.handleSound}>
@@ -76,18 +78,18 @@ class GenreItem extends React.Component {
                 </Link>
                 <div className ="single-movie-controls">
                     <Link to = {`/movies/${movie.id}`}>
-                        <i class="fas fa-play-circle"></i>
+                        <i className="fas fa-play-circle"></i>
                     </Link>
                     {listbutton}
                 </div>
                 <div className ="single-movie-info">
-                    {movie.rating}<Text>{'\u2B24'}</Text>{movie.year}<Text>{'\u2B24'}</Text>{movie.runtime}
+                    {movie.rating}.{movie.year}.{movie.runtime}
                 </div>
             </div>
         );
 
         return(
-            <div className = "genre-movie" onMouseEnter = {() => this.setState({ preview: movie.id })} OnMouseLeave = {() => this.setState({ preview: null })}>
+            <div className = "genre-movie" onMouseEnter = {() => this.setState({ preview: movie.id })} onMouseLeave = {() => this.setState({ preview: null })}>
                 {previewing ? preview : thumbnail}
             </div>
         );

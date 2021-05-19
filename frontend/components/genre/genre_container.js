@@ -17,7 +17,7 @@ const mstp = (state, ownProps) => {
     genres: state.entities.genres,
     movies: state.entities.movies,
     currentUser: state.sessions.currentUser,
-    mylists: Object.values(state.entities.mylists)
+    mylists: state.entities.mylists
   });
 };
 
