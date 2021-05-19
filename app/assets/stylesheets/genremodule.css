@@ -1,0 +1,9 @@
+.single-genre-module{
+    font-size: 1.4vw;
+    font-weight: 700;
+    margin: 3vw 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border-radius: 10px;
+}

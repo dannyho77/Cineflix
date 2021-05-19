@@ -23,8 +23,7 @@ class GenreModule extends React.Component {
                         {genres[id].movie_ids.map(movId => {
                             return(
                                 <div key={movId}>
-                                {movies[movId].title}
-                                    <img src={movies[movId].photoURL}/>
+                                <GenreItem movie={movies[movId]}/>
                                 </div>
                             )
                         })}
