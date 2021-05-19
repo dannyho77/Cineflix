@@ -83,7 +83,7 @@ class GenreItem extends React.Component {
                     {listbutton}
                 </div>
                 <div className ="single-movie-info">
-                    {movie.rating}.{movie.year}.{movie.runtime}
+                    rating: {movie.rating} | {movie.year} | {movie.runtime}
                 </div>
             </div>
         );
