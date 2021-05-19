@@ -16,7 +16,6 @@ class MoviesIndex extends React.Component{
     }
 
     componentDidMount(){
-        debugger
         this.props.fetchGenres().then(this.props.fetchMovies());
         // this.props.fetchMovies().then(res => console.log(res))
     }
