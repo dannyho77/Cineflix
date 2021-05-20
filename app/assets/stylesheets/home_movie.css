@@ -9,20 +9,21 @@
 }
 
 .home-movie-box #home-movie-logo{
-    width: 350px;
-    margin-left: 65px;
+    width: 20vw;
 }
 
-.home-movie-box #home-movie-info{
-    margin-left: 65px;
+.home-movie-box #video{
+    z-index: 0;
 }
 
 .home-movie-box #main-movie-controls{
-    font-size: 24px;
+    font-size: 3vh;
     font-weight: 400;
     position: absolute;
-    bottom: 400px;
+    top: 500px;
     width: 100%;
+    z-index: 1;
+    margin-left: 3vw;
 }
 
 #home-movie-options{
@@ -32,23 +33,30 @@
 }
 
 #home-movie-options .sound-button{
-    margin-left: auto;
-    margin-right: 300px;
+    margin-left: 77vw;
+    height: 5vh;
+}
+
+#home-movie-options .sound-button:hover{
+    cursor: pointer;
 }
 
 #home-movie-options #play{
     background-color: white;
-    padding: 8px 39px;
-    border-radius: 3px;
+    padding: 1.5vh 2.5vw;
+    border-radius: 4px;
     color: black;
     text-decoration: none;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 2vh;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     border: none;
-    margin-left: 65px;
-    height: 23px;
+    margin-top: auto;
 } 
+
+#play img{
+    height: 2vh;
+}
 
 #play:hover{
     opacity: 0.8;

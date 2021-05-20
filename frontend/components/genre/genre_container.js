@@ -6,9 +6,7 @@ import {fetchMyLists, addToMyList, removeFromMyList} from "../../actions/mylists
 import selectMovies from "../../reducers/selectmovie";
 import GenreModule from "./genre_module";
 
-const mstp = (state, ownProps) => {
-  // const genreId = ownProps.genreId || ownProps.match.params.genreId;
-  // const genre = state.entities.genres[genreId];
+const mstp = (state) => {
 
   return ({
     // genre,

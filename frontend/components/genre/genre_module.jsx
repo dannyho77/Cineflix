@@ -20,9 +20,9 @@ class GenreModule extends React.Component {
                         {genres[id].movie_ids.map(movId => {
                             return(
                                 <div key = {movId}>
-                                <GenreItem 
+                                <GenreItem className = "genre-item"
                                     movie = {movies[movId]}
-                                    mylists = {mylists}
+                                    mylists = {Object.values(mylists)}
                                     currentUser = {currentUser}
                                     addToMyList = {addToMyList}
                                     removeFromMyList = {removeFromMyList}

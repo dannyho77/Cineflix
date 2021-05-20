@@ -9,7 +9,7 @@ class GenreItem extends React.Component {
       this.handleAddRemove = this.handleAddRemove.bind(this);
     }
 
-    handleSound(){
+    handleSound(e){
         e.preventDefault();
         this.setState({muted:!this.state.muted});
     }
@@ -38,24 +38,20 @@ class GenreItem extends React.Component {
     }
 
     render(){
-        const {movie, mylists, movies} = this.props;
+        const {movie, mylists} = this.props;
         const listarr = Object.keys(mylists);
         const mylist = listarr.find(mylist => {
             mylist.movie_id === movie.id
         });
         
-        const thumbnail = <img src={movie.photoURL} />;
-        const {muted} = this.state;
+        const thumbnail = <img className = "img-thumb" src={movie.photoURL}/>;
         const previewing = (this.state.preview === movie.id);
 
+        const {muted} = this.state;
         const sound = muted ? (
-            <button className="sound-button" onClick={this.handleSound}>
-                <i className="fas fa-volume-mute"></i>
-            </button>
+            <img className="sound-button" src="https://cineflix-dev.s3.amazonaws.com/no-sound.png" onClick={this.handleSound}/>
             ) : (
-            <button className="sound-button" onClick={this.handleSound}>
-                <i className="fas fa-volume-up"></i>
-            </button>
+            <img className="sound-button" src="https://cineflix-dev.s3.amazonaws.com/sound.png" onClick={this.handleSound}/>
         );
 
         const listbutton = (
@@ -71,9 +67,8 @@ class GenreItem extends React.Component {
         const preview = (
             <div className = "single-movie">
                 <Link to = {`/movies/${movie.id}`}>
-                    <video className = "single-movie-video" autoPlay>
-                        <source src = {movie.movieURL} type="video/mp4"/>
-                        {sound}
+                    <video className = "movie-thumb" muted = {this.state.muted} autoPlay>
+                        <source className = "movie-thumb" src = {movie.movieURL} type="video/mp4"/>
                     </video>
                 </Link>
                 <div className ="single-movie-controls">
@@ -81,6 +76,7 @@ class GenreItem extends React.Component {
                         <i className="fas fa-play-circle"></i>
                     </Link>
                     {listbutton}
+                    {sound}
                 </div>
                 <div className ="single-movie-info">
                     rating: {movie.rating}  |  {movie.year}  |  {movie.runtime}
