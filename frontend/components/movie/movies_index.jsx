@@ -11,12 +11,14 @@ class MoviesIndex extends React.Component{
 
     constructor(props){
         super(props);
-        this.state = {genres: [], movies: []};
+        // this.state = {genres: [], movies: []};
         // this.logout = this.logout.bind(this);
     }
 
     componentDidMount(){
-        this.props.fetchGenres().then(this.props.fetchMovies());
+        // this.props.fetchGenres().then(this.props.fetchMovies());
+        this.props.fetchGenres();
+        this.props.fetchMovies();
         // this.props.fetchMovies().then(res => console.log(res))
     }
 
