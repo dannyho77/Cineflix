@@ -44,7 +44,7 @@ class GenreItem extends React.Component {
             mylist.movie_id === movie.id
         });
         
-        const thumbnail = <img className = "img-thumb" src={movie.photoURL} onClick = {this.handleClick}/>;
+        const thumbnail = <Link to = {`movies/${movie.id}`}><img className = "img-thumb" src={movie.photoURL}/>;</Link>
         const previewing = (this.state.preview === movie.id);
 
         const {muted} = this.state;
@@ -57,9 +57,9 @@ class GenreItem extends React.Component {
         const listbutton = (
             <button onClick = {this.handleAddRemove}>
                 { mylist? (
-                    <i className="far fa-times-circle"></i>
+                    <img className = 'list-button' src="https://cineflix-dev.s3.amazonaws.com/x-mark.png"/>
                 ) : (
-                    <i className="fas fa-plus-circle"></i>
+                    <img className = 'list-button' src="https://cineflix-dev.s3.amazonaws.com/check-mark.png"/>
                 )}
             </button>
         );
@@ -67,13 +67,13 @@ class GenreItem extends React.Component {
         const preview = (
             <div className = "single-movie">
                 <Link to = {`/movies/${movie.id}`}>
-                    <video className = "movie-thumb" muted = {this.state.muted} autoPlay onClick = {this.handleClick}>
+                    <video className = "movie-thumb" muted = {this.state.muted} autoPlay>
                         <source className = "movie-thumb" src = {movie.movieURL} type="video/mp4"/>
                     </video>
                 </Link>
                 <div className ="single-movie-controls">
                     <Link to = {`/movies/${movie.id}`}>
-                        <i className="fas fa-play-circle"></i>
+                        <img id = 'play-button' src="https://cineflix-dev.s3.amazonaws.com/play-button.png"/>
                     </Link>
                     {listbutton}
                     {sound}

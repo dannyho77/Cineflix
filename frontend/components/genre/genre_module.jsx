@@ -35,20 +35,6 @@ class GenreModule extends React.Component {
                         </div>
                         )
                 })}
-
-                {/* <div>
-                {movies.map(movie => {
-                    return(
-                        <GenreItem
-                            movie = {movie}
-                            mylists = {this.props.mylists}
-                            addToMyList = {this.props.addToMyList}
-                            removeFromMyList = {this.props.removeFromMyList}
-                            currentUser = {this.props.currentUser}
-                        />
-                    );
-                })}
-                </div> */}
                 
             </div>
         )
