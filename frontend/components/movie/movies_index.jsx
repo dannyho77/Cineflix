@@ -43,7 +43,7 @@ class MoviesIndex extends React.Component{
             <HomeMovie id='main-movie-player'/>
 
             <div>
-                {this.props.movies.length>0 && this.props.genres.length>0 ? <GenreContainer /> : ''}
+                {this.props.movies.length>0 && this.props.genres.length>0 ? <GenreContainer id = "genre-container"/> : ''}
             </div>
         </div>
         

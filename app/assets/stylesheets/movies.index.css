@@ -12,25 +12,25 @@
     z-index: 1; */
 }
 
-.movies-index .NavBar #logo{
+.NavBar #logo{
     justify-content: flex-start;
     height: 65px;
     margin-top: 20px;
     margin-left: 45px;
 }
 
-.movies-index .NavBar #github{
+.NavBar #github{
     height: 60px;
     margin-top: 3px;
 }
 
-.movies-index .NavBar #linkedin{
+.NavBar #linkedin{
     height: 70px;
     margin-top: 4px;
     margin-right: 8px;
 }
 
-.movies-index .NavBar .right-nav{
+.NavBar .right-nav{
     margin-left: auto;
     margin-right: 1rem;
     display: flex;
@@ -39,9 +39,15 @@
 }
 
 #main-movie-player{
-    top: -100px;
     position: absolute;
+    top: -100px;
     /* position: relative;
     top: 0;
     z-index: 0; */
+}
+
+.genre-modules{
+    position: absolute;
+    top: 80vh;
+    margin-left: 3vw;
 }
