@@ -1,6 +1,4 @@
-import React from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 import { fetchMovies } from '../../actions/movies';
 import { fetchGenre, fetchGenres } from '../../actions/genres';
 import MoviesIndex from './movies_index';

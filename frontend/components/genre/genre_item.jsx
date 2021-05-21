@@ -44,7 +44,7 @@ class GenreItem extends React.Component {
             mylist.movie_id === movie.id
         });
         
-        const thumbnail = <img className = "img-thumb" src={movie.photoURL}/>;
+        const thumbnail = <img className = "img-thumb" src={movie.photoURL} onClick = {this.handleClick}/>;
         const previewing = (this.state.preview === movie.id);
 
         const {muted} = this.state;
@@ -67,7 +67,7 @@ class GenreItem extends React.Component {
         const preview = (
             <div className = "single-movie">
                 <Link to = {`/movies/${movie.id}`}>
-                    <video className = "movie-thumb" muted = {this.state.muted} autoPlay>
+                    <video className = "movie-thumb" muted = {this.state.muted} autoPlay onClick = {this.handleClick}>
                         <source className = "movie-thumb" src = {movie.movieURL} type="video/mp4"/>
                     </video>
                 </Link>
