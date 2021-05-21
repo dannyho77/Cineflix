@@ -7,16 +7,14 @@ import { Route,
         } from 'react-router-dom';
         
 
-// import ReportIndexContainer from './reports/report_index_container';
-// import CreateReportFormContainer from './reports/create_report_form_container';
-// import EditReportFormContainer from './reports/edit_report_form_container';
-// import ReportShowContainer from './reports/report_show_container';
+import { AuthRoute, ProtectedRoute } from '../utils/route_util';
 import LoginFormContainer from '../components/session/login_form_container';
 import SignupFormContainer from '../components/session/signup_form_container';
 import home from '../components/home/home_container';
-import MoviesIndexContainer from '../components/movie/movies_index_container';
-import MovieShowContainer from '../components/movie/movie_show';
-import { AuthRoute, ProtectedRoute } from '../utils/route_util';
+import MoviesIndexContainer from './movie/movies_index_container';
+import MovieShowContainer from '../components/movie/movie_show_container';
+import GenreShowContainer from '../components/genre/genre_show_container';
+import MyListContainer from './mylist/mylist_container';
 
 
 const App = () => (
@@ -27,8 +25,8 @@ const App = () => (
       <Route exact path="/" component={home} />
       <ProtectedRoute exact path="/movies" component={MoviesIndexContainer} />
       <ProtectedRoute exact path="/movies/:movieId" component={MovieShowContainer} />
-      {/* <ProtectedRoute exact path="/movies/mylist" component={MyListIndexContainer} />
-      <ProtectedRoute exact path="/genres/:genreId" component={GenreShowContainer} /> */}
+      <ProtectedRoute exact path="/genres/:genreId" component={GenreShowContainer} />
+      {/* <ProtectedRoute exact path="/movies/mylist" component={MyListContainer} /> */}
     </Switch>
   </div>
 );

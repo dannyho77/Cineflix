@@ -3,15 +3,11 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import {fetchGenre} from "../../actions/genres";
 import {fetchMyLists, addToMyList, removeFromMyList} from "../../actions/mylists";
-import selectMovies from "../../reducers/selectmovie";
 import GenreModule from "./genre_module";
 
 const mstp = (state) => {
 
   return ({
-    // genre,
-    // genreId,
-    // movies: selectMovies(state, genre),
     genres: state.entities.genres,
     movies: state.entities.movies,
     currentUser: state.sessions.currentUser,
