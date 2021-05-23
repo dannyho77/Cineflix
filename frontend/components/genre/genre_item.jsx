@@ -44,7 +44,7 @@ class GenreItem extends React.Component {
             mylist.movie_id === movie.id
         });
         
-        const thumbnail = <Link to = {`movies/${movie.id}`}><img className = "img-thumb" src={movie.photoURL}/>;</Link>
+        const thumbnail = <Link to = {`movies/${movie.id}`}><img className = "img-thumb" src={movie.photoURL}/></Link>
         const previewing = (this.state.preview === movie.id);
 
         const {muted} = this.state;
@@ -71,16 +71,18 @@ class GenreItem extends React.Component {
                         <source className = "movie-thumb" src = {movie.movieURL} type="video/mp4"/>
                     </video>
                 </Link>
-                <div className ="single-movie-controls">
-                    <Link to = {`/movies/${movie.id}`}>
-                        <img id = 'play-button' src="https://cineflix-dev.s3.amazonaws.com/play-button.png"/>
-                    </Link>
-                    {listbutton}
-                    {sound}
-                </div>
-                <div className ="single-movie-info">
-                    rating: {movie.rating}  |  {movie.year}  |  {movie.runtime}
-                </div>
+                    <div className = "single-movie-container">
+                        <div className ="single-movie-controls">
+                            <Link to = {`/movies/${movie.id}`}>
+                                <img id = 'play-button' src="https://cineflix-dev.s3.amazonaws.com/play-button.png"/>
+                            </Link>
+                            {listbutton}
+                            {sound}
+                        </div>
+                        <div className ="single-movie-info">
+                            rating: {movie.rating}  |  {movie.year}  |  {movie.runtime}
+                        </div>
+                    </div>
             </div>
         );
 

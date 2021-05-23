@@ -13,16 +13,23 @@
 
 .img-thumb{
     border-radius: 3px;
+    z-index: 0;
 }
 
 .genre-movie{
     border-radius: 4px;
+    z-index: 0;
 }
 
 .sound-button:hover{
     cursor: pointer;
 }
 
+.single-movie-container {
+    z-index: 1;
+}
+
 .single-movie-controls img{
     width: 2vw;
+    z-index: 1;
 }

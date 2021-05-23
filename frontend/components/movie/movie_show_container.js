@@ -1,14 +1,16 @@
 import { connect } from 'react-redux';
-import { fetchMovies } from '../../actions/movies';
-import { fetchGenre, fetchGenres } from '../../actions/genres';
-import MoviesIndex from './movies_index';
+import { fetchMovie } from '../../actions/movies';
+import MovieShow from './movie_show';
 
 
-const mstp = state => ({
-  movies: Object.values(state.entities.movies),
-})
+const mstp = (state, ownProps) => {
+    let movieId = ownProps.match.params.movieId;
+    return ({
+        movie: state.entities.movies[movieId]
+    })
+}
 
 const mdtp = dispatch => ({
-  fetchMovie: (movie) => dispatch(fetchMovie(movie))
+  fetchMovie: (movieId) => dispatch(fetchMovie(movieId))
 })
-export default connect(mstp, mdtp)(MoviesIndex);
+export default connect(mstp, mdtp)(MovieShow);
