@@ -1,14 +1,11 @@
 .genre-names{
-    margin-bottom: 1.5vh;
+    font-size: 1.5vw;
+    font-weight: 600;
 }
 
 .single-genre-module{
-    font-size: 1.4vw;
-    font-weight: 700;
-    margin: 3vw 0;
-    padding: 0;
-    box-sizing: border-box;
-
+    margin-top: 1vh;
+    margin-bottom: 1.7vh;
 }
 
 .img-thumb{
@@ -18,18 +15,13 @@
 
 .genre-movie{
     border-radius: 4px;
-    z-index: 0;
+    z-index: 2;
 }
 
 .sound-button:hover{
     cursor: pointer;
 }
 
-.single-movie-container {
-    z-index: 1;
-}
-
 .single-movie-controls img{
     width: 2vw;
-    z-index: 1;
 }

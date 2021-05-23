@@ -22,7 +22,7 @@ class GenreModule extends React.Component {
                                 <div className = "single-genre-module" key = {id}>
                                     {genres[id].movie_ids.map(movId => {
                                         return(
-                                            <div className = "row" key = {movId}>
+                                            <div className = "genre-movie" key = {movId}>
                                             <GenreItem className = "genre-item"
                                                 movie = {movies[movId]}
                                                 mylists = {Object.values(mylists)}

@@ -87,7 +87,7 @@ class GenreItem extends React.Component {
         );
 
         return(
-            <div className = "genre-movie" onMouseEnter = {() => this.setState({ preview: movie.id })} onMouseLeave = {() => this.setState({ preview: null })}>
+            <div onMouseEnter = {() => this.setState({ preview: movie.id })} onMouseLeave = {() => this.setState({ preview: null })}>
                 {previewing ? preview : thumbnail}
             </div>
         );
