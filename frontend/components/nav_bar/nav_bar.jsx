@@ -5,7 +5,10 @@ class NavBar extends React.Component {
 
     constructor(props) {
         super(props);
-        
+        this.listener = null;
+        this.state = {
+        status: "top"
+        };
     }
 //       render(){
 //         return(
@@ -43,9 +46,29 @@ class NavBar extends React.Component {
     //     </div>
     // )
 
+    componentDidMount() {
+        this.listener = document.addEventListener("scroll", e => {
+          let scrolled = document.scrollingElement.scrollTop;
+          if (scrolled >= 100) {
+            if (this.state.status !== "amir") {
+              this.setState({ status: "amir" });
+            }
+          } else {
+            if (this.state.status !== "top") {
+              this.setState({ status: "top" });
+            }
+          }
+        });
+      }
+    
+      componentDidUpdate() {
+        document.removeEventListener("scroll", this.listener);
+      }
+
+
     render(){
             return (
-                <div className='nav'>
+                <div className={this.state.status === 'top' ? 'nav' : 'nav scrolled'} style = {{backgroundColor: this.state.status === 'top' ? '' : 'black'}}>
                     <img id='logo' src="https://cineflix-dev.s3.amazonaws.com/logo.png"/>
                     <div className='right-nav'>
                         <a href="https://github.com/dannyho77"><img src="https://www.freeiconspng.com/thumbs/github-icon/github-icon-9.png" id="github"/></a>

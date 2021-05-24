@@ -46,3 +46,14 @@
     z-index: 1;
 }
 
+@keyframes fadeIt {
+    0%   { background: linear-gradient(black, transparent) }
+    100% { background: #000000; }
+  }
+  
+  .scrolled{
+      background: linear-gradient(black, transparent);
+      background-image:none !important; 
+           -o-animation: fadeIt 0.25s ease-in-out; 
+              animation: fadeIt 0.25s ease-in-out; 
+  }
