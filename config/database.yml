@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: Cineflix_production
+  database: Cineflix_development
   username: Cineflix
   password: <%= ENV['CINEFLIX_DATABASE_PASSWORD'] %>

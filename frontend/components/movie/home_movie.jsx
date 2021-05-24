@@ -40,7 +40,7 @@ class HomeMovie extends React.Component{
                             </div>
                     </div>
 
-                    <video id = "video" muted={this.state.muted} autoPlay width = '100%' height = '100%'>
+                    <video id = "video" muted={this.state.muted} autoPlay>
                         <source src="https://cineflix-dev.s3.amazonaws.com/summerwars_vid.mp4" type="video/mp4" />
                     </video>
             </div>
