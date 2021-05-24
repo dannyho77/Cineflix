@@ -15,11 +15,12 @@ class GenreModule extends React.Component {
                 
                 {Object.keys(genres).map(id => {
                     return (
-                            <div>
-                                <div className = "genre-names">
+                            <div key = {id}>
+                                <div className = "genre-names" key = {id+1}>
                                     {genres[id].genre}
                                 </div>
-                                <div className = "single-genre-module" key = {id}>
+                                <div className = "single-genre-module" key = {id+2}>
+                                    
                                     {genres[id].movie_ids.map(movId => {
                                         return(
                                             <div className = "genre-movie" key = {movId}>
@@ -34,7 +35,7 @@ class GenreModule extends React.Component {
                                         )
                                     })}
                                 </div>
-                        </div>
+                            </div>
                         )
                 })}
                 

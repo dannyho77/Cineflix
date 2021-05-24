@@ -46,8 +46,7 @@
     z-index: 0; */
 }
 
-.genre-modules{
-    position: absolute;
-    top: 80vh;
-    margin-left: 3vw;
+.section{
+    position: relative;
+    z-index: 10;
 }

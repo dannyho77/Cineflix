@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavBar from '../nav_bar/nav_bar';
+import NavBar from '../nav_bar/nav_bar_container';
 
 
 class HomeMovie extends React.Component{

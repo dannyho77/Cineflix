@@ -5,7 +5,7 @@ html {
 .single-genre-module {
   display: flex;
   flex-flow: row;
-  overflow: hidden;
+  /* overflow: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -59,11 +59,15 @@ html {
 }
 
 .single-movie{
-  transition-duration: 300ms;
+  /* position: absolute; */
+  transition-duration: 500ms;
   border-radius: 4px;
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(35, 35, 35);
+  /* z-index: 10; */
 }
 
 .single-movie:hover{
-  transform: scale(1.75);
+  /* position: absolute; */
+  transform: scale(1.40);
+  
 }

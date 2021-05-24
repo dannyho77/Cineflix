@@ -1,3 +1,12 @@
+.genre-modules{
+    position: relative;
+    /* position: absolute; */
+    top: -250px;
+    margin-left: 3vw;
+    z-index: 10;
+    overflow: hidden;
+}
+
 .genre-names{
     font-size: 1.5vw;
     font-weight: 600;
@@ -5,21 +14,28 @@
 
 .single-genre-module{
     margin-top: 1vh;
-    margin-bottom: 1.7vh;
+    margin-bottom: 1.8vh;
 }
+
+/* .genre-item{
+    position: absolute;
+    z-index: 10;
+} */
 
 .img-thumb{
-    border-radius: 3px;
-    z-index: 0;
+    border-radius: 6px;
 }
 
-.genre-movie{
-    border-radius: 4px;
-    z-index: 2;
+.single-movie{
+    border-radius: 6px;
 }
 
 .sound-button:hover{
     cursor: pointer;
+}
+
+.single-movie-container{
+    padding: 1vw 1vh;
 }
 
 .single-movie-controls img{
