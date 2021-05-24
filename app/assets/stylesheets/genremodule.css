@@ -2,8 +2,10 @@
     position: relative;
     /* position: absolute; */
     top: -250px;
-    margin-left: 3vw;
+    padding-left: 3vw;
+    padding-bottom: 3vh;
     overflow: hidden;
+    z-index: 10;
 }
 
 .genre-names{

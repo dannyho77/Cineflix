@@ -51,9 +51,11 @@
     background-color: rgba(51,51,51,.6);
     height: 3.5vh;
     font-size: 1.1vw;
-    /* padding: 1vh 6vw .5vh 1vw; */
+    padding-left: 1vw;
+    padding-top: 1.3vh;
+    padding-bottom: 0.3vh;
+    padding-right: 5.2vw;
     margin-left: 1vw;
-    margin-right: 0;
 }
 
 #play{
