@@ -3,7 +3,6 @@
     /* position: absolute; */
     top: -250px;
     margin-left: 3vw;
-    z-index: 10;
     overflow: hidden;
 }
 
@@ -30,14 +29,24 @@
     border-radius: 6px;
 }
 
+.sound-button{
+    float: right;
+}
+
 .sound-button:hover{
     cursor: pointer;
 }
 
 .single-movie-container{
-    padding: 1vw 1vh;
+    padding: 0.3vh 0.5vw;
 }
 
 .single-movie-controls img{
-    width: 2vw;
+    width: 1.5vw;
+}
+
+.single-movie-info{
+    font-size: 0.7vw;
+    font-weight: 500;
+    margin-bottom: 0.3vh;
 }
