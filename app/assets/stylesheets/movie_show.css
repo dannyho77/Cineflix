@@ -1,0 +1,21 @@
+.movieshow-video{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.backarrow{
+    position: fixed;
+    width: 2vw;
+    transition-duration: 500ms;
+    z-index: 5;
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+.backarrow:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}

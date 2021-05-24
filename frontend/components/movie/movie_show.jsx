@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
 class MovieShow extends React.Component{
@@ -17,10 +16,14 @@ class MovieShow extends React.Component{
 
         return (
             <div>
-                {this.props.video ?
-                <video autoPlay>
-                    <source src = {this.props.movie.movieURL} type="video/mp4"/>
-                </video>
+                {this.props.movie ?
+                <div>
+                    <img className = "backarrow" src="https://cineflix-dev.s3.amazonaws.com/back-arrow.png" onClick={() => this.props.history.goBack()}/>
+                
+                    <video controls className = "movieshow-video" autoPlay>
+                        <source src = {this.props.movie.movieURL} type="video/mp4"/>
+                    </video>
+                </div>
                 : <p>null</p> }
             </div>
         )

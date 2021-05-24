@@ -50,3 +50,14 @@
     position: relative;
     z-index: 10;
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footer img{
+    width: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}

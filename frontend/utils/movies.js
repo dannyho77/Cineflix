@@ -1,7 +1,7 @@
 export const fetchMovies = () => (
     $.ajax({
       method: 'GET',
-      url: 'api/movies',
+      url: 'api/movies'
     })
   );
   
