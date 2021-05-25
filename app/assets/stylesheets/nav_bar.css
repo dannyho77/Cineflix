@@ -7,10 +7,8 @@
 
 .nav #logo{
     justify-content: flex-start;
-    align-self: center;
     /* height: 65px; */
     width: 5.5vw;
-    margin-top: auto;
     margin-left: 45px;
     z-index: 1;
 }

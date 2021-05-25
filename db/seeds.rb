@@ -360,6 +360,66 @@ yourname.photo.attach(io: file, filename: 'yourname.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/yourname_vid.mp4')
 yourname.video.attach(io: file, filename: 'yourname_vid.mp4')
 
+thebigshort = Movie.create!(
+    title: "The Big Short",
+    description: "In 2006-2007 a group of investors bet against the US mortgage market. In their research they discover how flawed and corrupt the market is.",
+    year: 2015,
+    rating: "R",
+    runtime: "2h 10min"  
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/thebigshort.jpg')
+swat.photo.attach(io: file, filename: 'thebigshort.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/thebigshort_vid.mp4')
+swat.video.attach(io: file, filename: 'thebigshort_vid.mp4')
+
+monstersinc = Movie.create!(
+    title: "Monsters, Inc.",
+    description: "In order to power the city, monsters have to scare children so that they scream. However, the children are toxic to the monsters, and after a child gets through, two monsters realize things may not be what they think.",
+    year: 2001,
+    rating: "G",
+    runtime: "1h 32min"  
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/monstersinc.jpg')
+swat.photo.attach(io: file, filename: 'monstersinc.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/monstersinc_vid.mp4')
+swat.video.attach(io: file, filename: 'monstersinc_vid.mp4')
+
+abouttime = Movie.create!(
+    title: "About Time",
+    description: "At the age of 21, Tim discovers he can travel in time and change what happens and has happened in his own life. His decision to make his world a better place by getting a girlfriend turns out not to be as easy as you might think.",
+    year: 2013,
+    rating: "R",
+    runtime: "2h 3min"  
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/abouttime.jpg')
+swat.photo.attach(io: file, filename: 'abouttime.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/aboutime_vid.mp4')
+swat.video.attach(io: file, filename: 'abouttime_vid.mp4')
+
+fordvferrari = Movie.create!(
+    title: "Ford v Ferrari",
+    description: "American car designer Carroll Shelby and driver Ken Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order to defeat Ferrari at the 24 Hours of Le Mans in 1966.",
+    year: 2019,
+    rating: "PG-13",
+    runtime: "2h 32min"  
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/fordvferrari.jpg')
+swat.photo.attach(io: file, filename: 'fordvferrari.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/fordvferrari_vid.mp4')
+swat.video.attach(io: file, filename: 'fordvferrari_vid.mp4')
+
+moonlight = Movie.create!(
+    title: "Moonlight",
+    description: "A young African-American man grapples with his identity and sexuality while experiencing the everyday struggles of childhood, adolescence, and burgeoning adulthood.",
+    year: 2016,
+    rating: "R",
+    runtime: "1h 51min"  
+)
+file = open('https://cineflix-dev.s3.amazonaws.com/moonlight.jpg')
+swat.photo.attach(io: file, filename: 'moonlight.jpg')
+file = open('https://cineflix-dev.s3.amazonaws.com/moonlight_vid.mp4')
+swat.video.attach(io: file, filename: 'moonlight_vid.mp4')
+
 #--------------------------------------------------
 # Genres
     comedy = Genre.create(genre: "Comedy")
@@ -408,9 +468,15 @@ yourname.video.attach(io: file, filename: 'yourname_vid.mp4')
     MovieGenre.create(movie_id: whenwefirstmet.id, genre_id: comedy.id)
     MovieGenre.create(movie_id: yourname.id, genre_id: animation.id)
     MovieGenre.create(movie_id: yourname.id, genre_id: romance.id)
+    MovieGenre.create(movie_id: thebigshort.id, genre_id: comedy.id)
+    MovieGenre.create(movie_id: thebigshort.id, genre_id: drama.id)
+    MovieGenre.create(movie_id: monstersinc.id, genre_id: animation.id)
+    MovieGenre.create(movie_id: abouttime.id, genre_id: romance.id)
+    MovieGenre.create(movie_id: fordvferrari.id, genre_id: drama.id)
+    MovieGenre.create(movie_id: moonlight.id, genre_id: drama.id)
 
 #--------------------------------------------------
 # My_Lists
     list1 = MyList.create(user_id: 1, movie_id: 2)
     list2 = MyList.create(user_id: 1, movie_id: 3)
-    list3 = MyList.create(user_id: 1, movie_id: 4)
+    list3 = MyList.create(user_id: 1, movie_id: 7)
