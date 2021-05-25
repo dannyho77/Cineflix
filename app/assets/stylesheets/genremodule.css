@@ -4,7 +4,7 @@
     top: -200px;
     padding-left: 3vw;
     padding-bottom: 3vh;
-    /* overflow: hidden; */
+    overflow: hidden;
     z-index: 10;
 }
 
