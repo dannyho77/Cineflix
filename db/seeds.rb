@@ -368,9 +368,9 @@ thebigshort = Movie.create!(
     runtime: "2h 10min"  
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/thebigshort.jpg')
-swat.photo.attach(io: file, filename: 'thebigshort.jpg')
+thebigshort.photo.attach(io: file, filename: 'thebigshort.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/thebigshort_vid.mp4')
-swat.video.attach(io: file, filename: 'thebigshort_vid.mp4')
+thebigshort.video.attach(io: file, filename: 'thebigshort_vid.mp4')
 
 monstersinc = Movie.create!(
     title: "Monsters, Inc.",
@@ -380,9 +380,9 @@ monstersinc = Movie.create!(
     runtime: "1h 32min"  
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/monstersinc.jpg')
-swat.photo.attach(io: file, filename: 'monstersinc.jpg')
+monstersinc.photo.attach(io: file, filename: 'monstersinc.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/monstersinc_vid.mp4')
-swat.video.attach(io: file, filename: 'monstersinc_vid.mp4')
+monstersinc.video.attach(io: file, filename: 'monstersinc_vid.mp4')
 
 abouttime = Movie.create!(
     title: "About Time",
@@ -392,9 +392,9 @@ abouttime = Movie.create!(
     runtime: "2h 3min"  
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/abouttime.jpg')
-swat.photo.attach(io: file, filename: 'abouttime.jpg')
+abouttime.photo.attach(io: file, filename: 'abouttime.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/aboutime_vid.mp4')
-swat.video.attach(io: file, filename: 'abouttime_vid.mp4')
+abouttime.video.attach(io: file, filename: 'abouttime_vid.mp4')
 
 fordvferrari = Movie.create!(
     title: "Ford v Ferrari",
@@ -404,9 +404,9 @@ fordvferrari = Movie.create!(
     runtime: "2h 32min"  
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/fordvferrari.jpg')
-swat.photo.attach(io: file, filename: 'fordvferrari.jpg')
+fordvferrari.photo.attach(io: file, filename: 'fordvferrari.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/fordvferrari_vid.mp4')
-swat.video.attach(io: file, filename: 'fordvferrari_vid.mp4')
+fordvferrari.video.attach(io: file, filename: 'fordvferrari_vid.mp4')
 
 moonlight = Movie.create!(
     title: "Moonlight",
@@ -416,9 +416,9 @@ moonlight = Movie.create!(
     runtime: "1h 51min"  
 )
 file = open('https://cineflix-dev.s3.amazonaws.com/moonlight.jpg')
-swat.photo.attach(io: file, filename: 'moonlight.jpg')
+moonlight.photo.attach(io: file, filename: 'moonlight.jpg')
 file = open('https://cineflix-dev.s3.amazonaws.com/moonlight_vid.mp4')
-swat.video.attach(io: file, filename: 'moonlight_vid.mp4')
+moonlight.video.attach(io: file, filename: 'moonlight_vid.mp4')
 
 #--------------------------------------------------
 # Genres
