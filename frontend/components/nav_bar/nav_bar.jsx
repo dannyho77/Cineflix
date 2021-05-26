@@ -33,6 +33,9 @@ class NavBar extends React.Component {
 
 
     render(){
+
+      const { genres } = this.props;
+
             return (
                 <div className={this.state.status === 'top' ? 'nav' : 'nav scrolled'} style = {{backgroundColor: this.state.status === 'top' ? '' : 'black'}}>
                     <div className='left-nav'>
@@ -40,14 +43,16 @@ class NavBar extends React.Component {
 
                         <div className = "dropdown-left">
                           <span id = "genres-link">Genres</span>
-                          <div class="dropdown-content">
+                          <div className="dropdown-content">
                               <img id = "up-caret" src="https://cineflix-dev.s3.amazonaws.com/caret-arrow-up.png" />
-                              <ul class="dropdown-list">
-                              <li><Link className = "dropdownlinks" to = "/genres/1">Comedy</Link></li>
-                              <li><Link className = "dropdownlinks" to = "/genres/2">Animation</Link></li>
-                              <li><Link className = "dropdownlinks" to = "/genres/3">Drama</Link></li>
-                              <li><Link className = "dropdownlinks" to = "/genres/4">Romance</Link></li>
-                              <li><Link className = "dropdownlinks" to = "/genres/5">Action</Link></li>
+                              <ul className="dropdown-list">
+
+                                {Object.keys(genres).map(id => {
+                                  return(
+                                    <li key={id}><Link className = "dropdownlinks" to = {`genres/${id}`}>{genres[id].genre}</Link></li>
+                                  )
+                                  })
+                                }
                               </ul>
                           </div>
                         </div>  
@@ -61,9 +66,9 @@ class NavBar extends React.Component {
 
                         <div className = "dropdown-right">
                             <img id = "profpic" src="https://cineflix-dev.s3.amazonaws.com/demouser_icon.jpg" />
-                            <div class="dropdown-content">
+                            <div className="dropdown-content">
                                   <img id = "up-caret" src="https://cineflix-dev.s3.amazonaws.com/caret-arrow-up.png" />
-                                  <ul class="dropdown-list">
+                                  <ul className="dropdown-list">
                                   <li className = "dropdownlinks"><a href="https://dannyho77.github.io/Danny-Ho-dev.bio/" id = 'portfoliolink'>Portfolio</a></li>
                                   <li className = "dropdownlinks" onClick={this.props.logout}>Log Out</li>
                                   </ul>
