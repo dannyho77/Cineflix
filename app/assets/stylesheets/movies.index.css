@@ -52,12 +52,14 @@
 } */
 
 .footer{
+    border-top: 2px solid rgb(80, 80, 80);
     display: flex;
     justify-content: center;
 }
 
 .footer img{
     width: 2vw;
+    margin-top: 3vh;
     margin-left: 1vw;
     margin-right: 1vw;
     margin-bottom: 2vh;

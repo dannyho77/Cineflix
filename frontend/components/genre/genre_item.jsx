@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class GenreItem extends React.Component {
     constructor(props) {
       super(props);
-      this.state = {preview: null, muted: true};
+      this.state = {preview: null, muted: false};
       this.handleSound = this.handleSound.bind(this);
       this.handleAddRemove = this.handleAddRemove.bind(this);
     }

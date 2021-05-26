@@ -6,20 +6,10 @@ html {
   display: flex;
   flex-flow: row;
   /* overflow: hidden; */
-  scroll-behavior: smooth;
+  /* overflow-x: auto; */
+  
 }
 
-  /* section {
-    width: 100%;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat;
-    margin: 20px 0;
-  } */
-    
-/* .genre-item{
-  flex-flow: row;
-} */
 .img-thumb{
   border-radius: 5px;
   width: 16vw;
@@ -31,11 +21,6 @@ html {
   padding: 0.1vw;
 }
       
-/* .movie-thumb:hover { 
-  transition: 250ms all;
-  transform: scale(1.75);
-} */
-
 .arrow__btn {
   position: absolute;
   color: #fff;
@@ -69,5 +54,39 @@ html {
 .single-movie:hover{
   /* position: absolute; */
   transform: scale(1.30);
-  
 }
+
+/* .left-button{
+  position: absolute;
+  left: 0;
+  margin-top: 0.1vh;
+  width: 3vw;
+  height: 8.8vh;
+  padding: 5px;
+  background: black;
+  opacity: 0.50;
+  box-shadow: 0 0 6.1px 0.9px grey;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  z-index: 5;
+}
+
+.right-button{
+  position: absolute;
+  box-shadow: 0 0 6.1px 0.9px grey;
+  padding: 5px;
+  cursor: pointer;
+  width: 20px;
+  height: 132px;
+  background: grey;
+  color: white;
+  opacity: 0.25;
+  font-size: 25px;
+  z-index: 5;
+  text-align: center;
+  vertical-align: middle;
+
+  right: 1rem;
+  transform: translateY(45%);
+} */
