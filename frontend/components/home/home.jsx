@@ -10,6 +10,7 @@ class Home extends React.Component {
           redirect: false
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemoSubmit = this.handleDemoSubmit.bind(this);;
     }
 
     update(field) {
@@ -24,6 +25,12 @@ class Home extends React.Component {
         if (this.state.email !== ''){
           this.setState({redirect: true})
         };
+    }
+
+    handleDemoSubmit(e) {
+      e.preventDefault();
+      const user = { email: 'baejoohyun@gmail.com', password: 'redvelvet' };
+      this.props.login(user).then(() => this.props.history.push('/movies'));
     }
 
 
@@ -56,6 +63,8 @@ class Home extends React.Component {
                           <input type="text" placeholder='Email address' onChange={this.update('email')}/>
                           <button>Get Started &gt;</button>
                       </form>
+
+                      <button id = "demo-login" onClick = {this.handleDemoSubmit}>Demo Login</button>
                   </div>
                 </div>
           </div>

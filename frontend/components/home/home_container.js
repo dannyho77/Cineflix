@@ -4,10 +4,10 @@ import { login } from '../../actions/session';
 import Home from './home';
 
   
-  const mapDispatchToProps = (dispatch) => {
+  const mdtp = (dispatch) => {
     return {
       login: (user) => dispatch(login(user))
     };
   };
   
-  export default connect(null, mapDispatchToProps)(Home);
+  export default connect(null, mdtp)(Home);
