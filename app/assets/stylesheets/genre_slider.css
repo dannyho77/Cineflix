@@ -5,7 +5,6 @@ html {
 .single-genre-module {
   display: flex;
   flex-flow: row;
-  /* overflow: hidden; */
   /* overflow-x: auto; */
   
 }
@@ -21,7 +20,20 @@ html {
   padding: 0.1vw;
 }
       
-.arrow__btn {
+.single-movie{
+  /* position: absolute; */
+  transition-duration: 500ms;
+  border-radius: 4px;
+  background-color: rgb(35, 35, 35);
+  /* z-index: 10; */
+}
+
+.single-movie:hover{
+  /* position: absolute; */
+  transform: scale(1.30);
+}
+
+/* .arrow__btn {
   position: absolute;
   color: #fff;
   text-decoration: none;
@@ -41,20 +53,7 @@ html {
 .right-arrow {
   top:0; bottom:0; right: 0;
   background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-}
-
-.single-movie{
-  /* position: absolute; */
-  transition-duration: 500ms;
-  border-radius: 4px;
-  background-color: rgb(35, 35, 35);
-  /* z-index: 10; */
-}
-
-.single-movie:hover{
-  /* position: absolute; */
-  transform: scale(1.30);
-}
+} */
 
 /* .left-button{
   position: absolute;

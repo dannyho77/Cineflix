@@ -1,21 +1,21 @@
 export const fetchLists = () => (
     $.ajax({
       method: 'GET',
-      url: 'api/my_lists',
+      url: 'api/mylists',
     })
 );
 
-export const postList = (movieId) => (
+export const postList = (mylist) => (
     $.ajax({
       method: 'POST',
-      url: 'api/my_lists',
-      data: { movieId }
+      url: 'api/mylists',
+      data: { mylist }
     })
 );
 
-export const deleteList = (id) => (
+export const deleteList = (mylistId) => (
     $.ajax({
       method: 'DELETE',
-      url: `api/my_lists/${id}`,
+      url: `api/mylists/${mylistId}`,
     })
 );

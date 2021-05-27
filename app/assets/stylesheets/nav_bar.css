@@ -17,8 +17,10 @@
     font-weight: 600;
 }
 
+.nav .left-nav #mylist:hover{
+    color: rgb(165, 165, 165);
+}
 .nav #logo{
-    /* height: 65px; */
     width: 5.5vw;
     margin-left: 45px;
     z-index: 1;

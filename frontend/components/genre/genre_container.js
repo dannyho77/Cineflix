@@ -1,4 +1,3 @@
-import React from 'react';
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import {fetchGenre} from "../../actions/genres";
@@ -11,16 +10,15 @@ const mstp = (state) => {
     genres: state.entities.genres,
     movies: state.entities.movies,
     currentUser: state.sessions.currentUser,
-    mylists: state.entities.mylists
+    mylists: Object.values(state.entities.mylists)
   });
 };
 
 const mdtp = (dispatch) => {
   return {
-    fetchGenre: (genre) => dispatch(fetchGenre(genre)),
-    addToMyList: (movieId) => dispatch(addToMyList(movieId)),
-    removeFromMyList: (id) => dispatch(removeFromMyList(id)),
-    fetchMyLists: () => dispatch(fetchMyLists()),
+    addToMyList: (movie) => dispatch(addToMyList(movie)),
+    removeFromMyList: (mylistId) => dispatch(removeFromMyList(mylistId)),
+    fetchMyLists: () => dispatch(fetchMyLists())
   };
 };
 

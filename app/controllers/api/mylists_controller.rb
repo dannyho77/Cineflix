@@ -11,7 +11,7 @@ class Api::MylistsController < ApplicationController
     end
 
     def create
-        @mylist = MyList.new(user_id: current_user.id, movie_id: params[:movie_id])
+        @mylist = MyList.new(user_id: current_user.id, movie_id: params[:movieId])
         if @mylist.save
             render json: {movie_id: @mylist[:movie_id]}
         else
@@ -20,7 +20,7 @@ class Api::MylistsController < ApplicationController
     end
 
     def destroy
-        @mylist = current_user.my_lists.find_by(movie_id: params[:movie_id])
+        @mylist = current_user.my_lists.find_by(movie_id: params[:id])
         if @mylist
             @mylist.destroy
             render :show

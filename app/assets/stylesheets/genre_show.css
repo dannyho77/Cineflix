@@ -1,0 +1,21 @@
+.genreshowpage{
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+.genrename{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 6vh;
+}
+
+.genreshowcontainer {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+.genre-movies{
+    margin-bottom: 5vh;
+}

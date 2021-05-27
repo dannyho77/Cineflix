@@ -1,20 +1,20 @@
 import * as Actions from '../actions/mylists';
-import { merge } from 'lodash';
 
 export default (state = {}, action) => {
     Object.freeze(state);
 
-    let nextstate = Object.assign({}, state)
+    let nextstate = Object.assign({}, state);
 
     switch (action.type){
         case Actions.RECEIVE_MYLISTS:
-            return action.movies;
+            return action.mylists;
         case Actions.ADD_MYLIST:
-            return Object.assign({}, state, { [action.movieId.id]: action.movieId});
+            const idx = Object.keys(action.mylist)[0];
+            nextstate[idx] = action.mylist[idx];
+            return nextstate;
         case Actions.REMOVE_MYLIST:
-            let newstate = merge({}, state);
-            delete newstate[action.videoId];
-            return newstate;
+            delete nextstate[Object.keys(action.mylist)[0]];
+            return nextstate;
         default:
             return state;
     }

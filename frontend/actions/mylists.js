@@ -9,14 +9,14 @@ export const receiveMyLists = mylists => ({
     mylists
 })
 
-export const addMyList = movieId => ({
+export const addMyList = mylist => ({
     type: ADD_MYLIST,
-    movieId
+    mylist
 })
 
-export const removeMyList = movieId => ({
+export const removeMyList = mylist => ({
     type: REMOVE_MYLIST,
-    movieId
+    mylist
 })
 
 export const fetchMyLists = () => dispatch => (
@@ -25,14 +25,14 @@ export const fetchMyLists = () => dispatch => (
     ))
   );
   
-  export const addToMyList = movieId => dispatch => (
-    APIUtil.postList(movieId).then(movie => (
-      dispatch(addMyList(movie))
+  export const addToMyList = movie => dispatch => (
+    APIUtil.postList(movie).then(mylist => (
+      dispatch(addMyList(mylist))
     ))
   );
 
-  export const removeFromMyList = id => dispatch => (
-    APIUtil.deleteList(id).then(movieId => (
-      dispatch(removeMyList(movieId))
+  export const removeFromMyList = mylistId => dispatch => (
+    APIUtil.deleteList(mylistId).then(mylist => (
+      dispatch(removeMyList(mylist))
     ))
   );

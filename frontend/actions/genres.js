@@ -14,8 +14,8 @@ const receiveGenres = genres => ({
 })
 
 
-export const fetchGenre = genreId => dispatch => (
-    APIUtil.fetchGenre(genreId).then(genre => (
+export const fetchGenre = id => dispatch => (
+    APIUtil.fetchGenre(id).then(genre => (
       dispatch(receiveGenre(genre))
     ))
 );

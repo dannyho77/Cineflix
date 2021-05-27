@@ -8,6 +8,10 @@ class GenreModule extends React.Component {
         
     }
 
+    componentDidMount() {
+        this.props.fetchMyLists();
+    }
+
 
     render(){
         const {genres, movies, mylists, currentUser, addToMyList, removeFromMyList} = this.props;
@@ -31,7 +35,7 @@ class GenreModule extends React.Component {
                                                     
                                                         <GenreItem className = "genre-item"
                                                             movie = {movies[movId]}
-                                                            mylists = {Object.values(mylists)}
+                                                            mylists = {mylists}
                                                             currentUser = {currentUser}
                                                             addToMyList = {addToMyList}
                                                             removeFromMyList = {removeFromMyList}

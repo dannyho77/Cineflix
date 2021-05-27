@@ -13,7 +13,7 @@ import SignupFormContainer from '../components/session/signup_form_container';
 import home from '../components/home/home_container';
 import MoviesIndexContainer from './movie/movies_index_container';
 import MovieShowContainer from '../components/movie/movie_show_container';
-import GenreShowContainer from '../components/genre/genre_container';
+import GenreShowContainer from '../components/genre/genre_show_container';
 import MyListContainer from './mylist/mylist_container';
 
 
