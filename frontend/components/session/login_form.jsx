@@ -38,6 +38,10 @@ class LoginForm extends React.Component {
       );
     }
 
+    componentWillUnmount(){
+      this.props.clearErrors()
+    }
+
     render(){
         return(
           <div id="login-form-body">

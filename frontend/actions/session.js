@@ -21,7 +21,7 @@ export const receiveErrors = errors => {
     };
   };
   
-export const clearErrors = () => {
+export const clearSessionErrors = () => {
     return {
       type: CLEAR_ERRORS
     }
@@ -39,3 +39,5 @@ export const login = formUser => dispatch => postSession(formUser)
 
 export const logout = () => dispatch => deleteSession()
     .then(() => dispatch(logoutCurrentUser()));
+
+export const clearErrors = () => dispatch => dispatch(clearSessionErrors());
