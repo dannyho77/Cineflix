@@ -3,18 +3,17 @@ import { connect } from 'react-redux';
 import { login } from '../../actions/session';
 import LoginForm from './login_form';
 
-// const mapStateToProps = ({ errors }) => {
-const mstp = ({ }) => {
+
+const mstp = state => {
   return {
-    // errors: errors.session,
-    formType: 'login',
-    // navLink: <Link to="/signup">sign up instead</Link>,
+    errors: state.errors.session
   };
 };
 
 const mdtp = dispatch => {
   return {
     processForm: (user) => dispatch(login(user)),
+    clearErrors: () => dispatch(clearErrors())
   };
 };
 

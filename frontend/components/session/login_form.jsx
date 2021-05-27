@@ -16,7 +16,7 @@ class LoginForm extends React.Component {
         return e => this.setState({
           [field]: e.currentTarget.value
         });
-      }
+    }
 
     handleSubmit(e) {
       // debugger
@@ -24,7 +24,19 @@ class LoginForm extends React.Component {
         const user = Object.assign({}, this.state);
         this.props.processForm(user)
         .then(this.props.history.push('/movies'));
-      }
+    }
+
+    renderErrors(){
+      return (
+        <ul className = "err-wrapper">
+          {this.props.errors.map((err, i) => (
+            <li className="error" key={i}>
+              {err}
+            </li>
+          ))}
+        </ul>
+      );
+    }
 
     render(){
         return(
@@ -45,6 +57,7 @@ class LoginForm extends React.Component {
                       <br/>
                       <input type="password" value={this.state.password} onChange={this.update('password')} id='login-password' placeholder='Password'/>
                       <br/>
+                      <div className = "errors">{this.renderErrors()}</div>
                       <button id="login-submit">Sign In</button>
                   </form>
                   <div id='newto'>New to Netflix? <Link to='/signup' id='signup-link'>Sign up now</Link>.</div>

@@ -22,14 +22,26 @@ class SignupForm extends React.Component {
         return e => this.setState({
           [field]: e.currentTarget.value
         });
-      }
+    }
 
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user)
           .then((user) => this.props.history.push('/movies'));
-      }
+    }
+
+    renderErrors(){
+      return (
+        <ul className = "err-wrapper">
+          {this.props.errors.map((err, i) => (
+            <li className="error" key={i}>
+              {err}
+            </li>
+          ))}
+        </ul>
+      );
+    }
 
     render(){
         return(
@@ -51,6 +63,7 @@ class SignupForm extends React.Component {
                         <br/>
                         <input type="password" value={this.state.password} onChange={this.update('password')} id='signup-password' placeholder='Add a password'/>
                         <br/>
+                        <div className = "errors">{this.renderErrors()}</div>
                         <button onClick={this.handleSubmit} className="signup-submit">Continue</button>
                       </div>
                   </form>

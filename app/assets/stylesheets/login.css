@@ -136,3 +136,14 @@
     text-decoration: underline;
 }
 
+.err-wrapper{
+    margin-top: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.error{
+    list-style-type: none;
+    color: #e87c03;
+    font-size: 13px;
+}

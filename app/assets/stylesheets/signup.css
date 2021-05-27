@@ -122,3 +122,7 @@
     align-items: center;
 }
 
+.signup-form-box .errors .error{
+    color: #b92d2b;
+} 
+
