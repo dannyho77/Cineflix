@@ -1,5 +1,5 @@
 .genreshowpage{
-    position: absolute;
+    position: relative;
     margin-top: 5vh;
     margin-left: 3vw;
 }
@@ -18,4 +18,12 @@
 
 .genre-movies{
     margin-bottom: 5vh;
+}
+
+#genreshowbody .dropdown-left{
+    z-index: 10;
+}
+
+#genreshowbody .dropdown-right{
+    z-index: 10;
 }

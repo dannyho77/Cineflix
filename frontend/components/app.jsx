@@ -15,6 +15,7 @@ import MoviesIndexContainer from './movie/movies_index_container';
 import MovieShowContainer from '../components/movie/movie_show_container';
 import GenreShowContainer from '../components/genre/genre_show_container';
 import MyListContainer from './mylist/mylist_container';
+import SearchContainer from './search/search_container';
 
 
 const App = () => (
@@ -26,7 +27,8 @@ const App = () => (
       <ProtectedRoute exact path="/movies" component={MoviesIndexContainer} />
       <ProtectedRoute exact path="/movies/:movieId" component={MovieShowContainer} />
       <ProtectedRoute exact path="/genres/:genreId" component={GenreShowContainer} />
-      <ProtectedRoute exact path="/movies/mylist" component={MyListContainer} />
+      <ProtectedRoute exact path="/mylist" component={MyListContainer} />
+      <ProtectedRoute exact path="/search/:input" component={SearchContainer} />
     </Switch>
   </div>
 );

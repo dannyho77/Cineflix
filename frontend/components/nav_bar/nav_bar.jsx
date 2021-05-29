@@ -39,7 +39,7 @@ class NavBar extends React.Component {
             return (
                 <div className={this.state.status === 'top' ? 'nav' : 'nav scrolled'} style = {{backgroundColor: this.state.status === 'top' ? '' : 'black'}}>
                     <div className='left-nav'>
-                        <img id='logo' src="https://cineflix-dev.s3.amazonaws.com/logo.png"/>
+                        <Link to = "/movies"><img id='logo' src="https://cineflix-dev.s3.amazonaws.com/logo.png"/></Link>
 
                         <div className = "dropdown-left">
                           <span id = "genres-link">Genres</span>
@@ -57,7 +57,7 @@ class NavBar extends React.Component {
                           </div>
                         </div>  
                         
-                        <Link to = "movies/mylist" id = "mylist">My List</Link>
+                        <Link to = "/mylist" id = "mylist">My List</Link>
                     </div>
 
                     <div className='right-nav'>

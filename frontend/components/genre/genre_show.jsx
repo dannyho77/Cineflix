@@ -1,12 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import GenreItem from '../genre/genre_item';
+import NavBar from '../nav_bar/nav_bar_container';
 
 class GenreShow extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {preview: null, muted: false};
-        this.handleSound = this.handleSound.bind(this);
         // this.handleAddRemove = this.handleAddRemove.bind(this);
     }
 
@@ -18,10 +16,6 @@ class GenreShow extends React.Component {
         this.props.fetchMyLists();
     }
 
-    handleSound(e){
-        e.preventDefault();
-        this.setState({muted:!this.state.muted});
-    }
 
     // handleAddRemove(){
     //     const {
@@ -51,26 +45,29 @@ class GenreShow extends React.Component {
 
 
         return(
-            <div className = "genreshowpage">
-                <div className = "genrename">{genre.genre}</div>
-                
-                <div className = "genreshowcontainer">
-                    {genre.movie_ids.map(movId => {
-                            return(
-                                    <div className = "genre-movies" key = {movId}>
-                                                        
-                                        <GenreItem className = "genre-item"
-                                                                movie = {movies[movId]}
-                                                                mylists = {mylists}
-                                                                currentUser = {currentUser}
-                                                                addToMyList = {addToMyList}
-                                                                removeFromMyList = {removeFromMyList}
-                                        />
-                                                        
-                                    </div>
-                            )
-                    })}
-                </div>
+            <div id = "genreshowbody">
+                    <NavBar className='NavBar'/>
+                    <div className = "genreshowpage">
+                        <div className = "genrename">{genre.genre}</div>
+                        
+                        <div className = "genreshowcontainer">
+                            {genre.movie_ids.map(movId => {
+                                    return(
+                                            <div className = "genre-movies" key = {movId}>
+                                                                
+                                                <GenreItem className = "genre-item"
+                                                                        movie = {movies[movId]}
+                                                                        mylists = {mylists}
+                                                                        currentUser = {currentUser}
+                                                                        addToMyList = {addToMyList}
+                                                                        removeFromMyList = {removeFromMyList}
+                                                />
+                                                                
+                                            </div>
+                                    )
+                            })}
+                        </div>
+                    </div>
             </div>
         )
     }

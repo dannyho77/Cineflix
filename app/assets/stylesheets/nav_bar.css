@@ -48,9 +48,8 @@
 .dropdown-list{
     list-style-type: none;
     text-decoration: none;
-    color: white;
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.8;
     margin: 0;
     padding-top: 1vh;
     padding-left: 1vw;
@@ -60,10 +59,8 @@
 
 .dropdownlinks{
     text-decoration: none;
-    color: white;
     margin-bottom: 1vh;
     font-weight: 500;
-    justify-content: left;
 }
 
 .dropdownlinks:hover{
