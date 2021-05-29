@@ -61,6 +61,9 @@ class NavBar extends React.Component {
                     </div>
 
                     <div className='right-nav'>
+                        <img className = "searchimg" src="https://cineflix-dev.s3.amazonaws.com/search.png" />
+                        <input className = "search" type = "text" placeholder = "search movie titles"/>
+
                         <a href="https://github.com/dannyho77"><img src="https://cineflix-dev.s3.amazonaws.com/nav.github-logo.png" id="github"/></a>
                         <a href="https://www.linkedin.com/in/danny-ho-a4988360"><img src="https://cineflix-dev.s3.amazonaws.com/nav.linkedin-logo.png" id="linkedin"/></a>
 

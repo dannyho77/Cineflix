@@ -26,6 +26,11 @@
     z-index: 1;
 }
 
+#genres-link:hover{
+    cursor: pointer;
+    color: rgb(165, 165, 165)
+}
+
 .dropdown-left{
     position: relative;
     margin-left: 1.5vw;
@@ -78,8 +83,7 @@
 }
 
 .nav #github{
-    width: 1.8vw;
-    
+    width: 1.8vw; 
     margin-right: 1.5vw;
 }
 
@@ -164,3 +168,17 @@
            -o-animation: fadeIt 0.25s ease-in-out; 
               animation: fadeIt 0.25s ease-in-out; 
   }
+
+.search{
+    margin-right: 1.5vw;
+    height: 3.5vh;
+    background-color: #141414;
+    color: white;
+    border: solid 1px white;
+    padding-left: 1vw;
+}
+
+.searchimg{
+    height: 2.2vh;
+    margin-right: 0.5vw;
+}
