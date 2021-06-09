@@ -1,26 +1,45 @@
-[logo]: https://cineflix-dev.s3.amazonaws.com/logo.png "Cineflix -- logo"
-
-# CINEFLIX
+![logo](https://cineflix-dev.s3.amazonaws.com/logo.png)  
 [Live Link](https://cineflix77.herokuapp.com/)
 
 ## Background
-Cineflix is a Netflix clone, built from scratch.
-The app features movie trailers/clips, organized by genre.
-Logged in users can also add/remove movies to/from a personal list.
+Cineflix is a Netflix clone, built from scratch, where users can watch and enjoy movie trailers/clips.
+The app organizes movies by distinct genre categories.
+Logged in users can add and remove movies to/from a personal collection.
 Users may also search for movies by title.  
 
-Cineflix utilizes a ruby on rails backend to provide a framework for user and movie data. PostgreSQL is used to query/interact with the database. On the frontend, React/Redux is used to connect backend data to a clean and intuitive user interface. Lastly, Amazon Web Services is used to store all media files related to movie titles under Cineflix.
+Cineflix utilizes a ruby on rails backend to provide a framework for core app data, such as individual user data, movie and media information, genre data, and CRUD functionality for adding and removing movies to/from a user's personal collection. PostgreSQL is used to query/interact with the database. On the frontend, React/Redux is implemented to connect the backend data to a clean and intuitive user interface. For example, there are dedicated 'genre-show' pages that only show movies in a specific genre, as well as a dynamic 'my list' page, showing a users saved movies. Lastly, Amazon Web Services (S3) is used as server-side storage to house all multimedia files related to all movie titles.
 
 ## Technologies
 - Ruby on Rails
-- PostgreSQL
-- Amazon Web Services
 - React/Redux
+- PostgreSQL
+- Amazon Web Services (S3)
 - Webpack
 
 ## Features
 
 ### User Auth
+- Users can securely sign up and create a personal Cineflix account.
+- Users who would like to sample the app first, may log in as a demo user to browse the site and test its functionality.
+- Users can only browse/access movie titles through a valid Cineflix account (or through the provided demo account).
+
 ### Browse Titles
+- Upon logging in, users are directed to the main Cineflix page, displaying a main featured movie as well as an index of all Cineflix titles organized by genre.
+- The featured movie autoplays on the main page, and all other individual movie titles are displayed in 'movie tiles', in their respective genre categories.
+- Movie tiles expand and autoplay their trailers upon hover. Such movie's details (rating, year, runtime) are also displayed on hovering the movie tile.
+
 ### Genres
-### Add/Remove Titles to/from a personal List
+- Logged in users have access to a genre-dropdown menu in a site-wide navbar.
+- Clicking on a specific genre link in the aforementioned genre-dropdown, direct the user to a dedicated 'genre-show-page', that displays all Cineflix movie titles belong to a specific genre.
+- All 'hover' effects/functionality with regard to movie tiles are retained here.
+
+### Add/Remove Titles to/from a personal collection
+- Users can add or remove a movie to/from their personal collection via hovering a movie tile and clicking on the add/remove button.
+- Movies that are already in a user's collection will only display the remove option and vice-versa.
+- There is a dedicated link to a user's personal movie collection in the site-wide navbar.
+- Adding and removing movies from a user's collection is dynamic and updated in real-time.
+
+### Search
+- Cineflix implements the well-known 'fuzzy-search' library, that allows users to search for a specific movie by title.
+- The fuzzy-search function accounts for user input error, by displaying possible related movie titles despite spelling errors.
+- The search function is also dynamic, in that, as soon as the user starts typing in the search field, related titles will automatically appear as movie tiles.
