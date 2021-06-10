@@ -26,8 +26,38 @@ Cineflix utilizes a ruby on rails backend to provide a framework for core app da
 ### Browse Titles
 - Upon logging in, users are directed to the main Cineflix page, displaying a main featured movie as well as an index of all Cineflix titles organized by genre.
 - The featured movie autoplays on the main page, and all other individual movie titles are displayed in 'movie tiles', in their respective genre categories.
-- Movie tiles expand and autoplay their trailers upon hover. Such movie's details (rating, year, runtime) are also displayed on hovering the movie tile.  
-![movietile](https://media.giphy.com/media/0EkDoKGMKZrcpEnZeO/giphy.gif)
+- Movie tiles expand and autoplay their trailers upon hover. Such movie's details (rating, year, runtime) are also displayed on hovering the movie tile (related .gif and code snippet below).  
+![movietile](https://media.giphy.com/media/0EkDoKGMKZrcpEnZeO/giphy.gif)  
+```c
+const preview = (
+            movie ? 
+            <div className = "single-movie">
+                <Link to = {`/showmovie/${movie.id}`}>
+                    <video className = "movie-thumb" muted = {this.state.muted} autoPlay>
+                        <source className = "movie-thumb" src = {movie.movieURL} type="video/mp4"/>
+                    </video>
+                </Link>
+                    <div className = "single-movie-container">
+                        <div className ="single-movie-controls">
+                            <Link to = {`/showmovie/${movie.id}`}>
+                                <img id = 'play-button' src="https://cineflix-dev.s3.amazonaws.com/play-button.png"/>
+                            </Link>
+                            {listbutton}
+                            {sound}
+                        </div>
+                        <div className ="single-movie-info">
+                            rating: {movie.rating}  |  {movie.year}  |  {movie.runtime}
+                        </div>
+                    </div>
+            </div> : <p>none</p>
+        );
+
+        return(
+            <div onMouseEnter = {() => this.setState({ preview: movie.id })} onMouseLeave = {() => this.setState({ preview: null })}>
+                {previewing ? preview : thumbnail}
+            </div>
+        );
+```
 
 ### Genres
 - Logged in users have access to a genre-dropdown menu in a site-wide navbar.
