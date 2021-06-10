@@ -26,7 +26,8 @@ Cineflix utilizes a ruby on rails backend to provide a framework for core app da
 ### Browse Titles
 - Upon logging in, users are directed to the main Cineflix page, displaying a main featured movie as well as an index of all Cineflix titles organized by genre.
 - The featured movie autoplays on the main page, and all other individual movie titles are displayed in 'movie tiles', in their respective genre categories.
-- Movie tiles expand and autoplay their trailers upon hover. Such movie's details (rating, year, runtime) are also displayed on hovering the movie tile.
+- Movie tiles expand and autoplay their trailers upon hover. Such movie's details (rating, year, runtime) are also displayed on hovering the movie tile.  
+![movietile](https://media.giphy.com/media/0EkDoKGMKZrcpEnZeO/giphy.gif)
 
 ### Genres
 - Logged in users have access to a genre-dropdown menu in a site-wide navbar.
@@ -42,4 +43,5 @@ Cineflix utilizes a ruby on rails backend to provide a framework for core app da
 ### Search
 - Cineflix implements the well-known 'fuzzy-search' library, that allows users to search for a specific movie by title.
 - The fuzzy-search function accounts for user input error, by displaying possible related movie titles despite spelling errors.
-- The search function is also dynamic, in that, as soon as the user starts typing in the search field, related titles will automatically appear as movie tiles.
+- The search function is also dynamic, in that, as soon as the user starts typing in the search field, related titles will automatically appear as movie tiles.  
+![search](https://media.giphy.com/media/xrNk5ql98ldY5uaQyH/giphy.gif)
