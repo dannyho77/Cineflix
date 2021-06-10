@@ -66,9 +66,41 @@ const preview = (
 
 ### Add/Remove Titles to/from a personal collection
 - Users can add or remove a movie to/from their personal collection via hovering a movie tile and clicking on the add/remove button.
-- Movies that are already in a user's collection will only display the remove option and vice-versa.
+- Movies that are already in a user's collection will only display the remove option and vice-versa (_see_ code snippet below).
 - There is a dedicated link to a user's personal movie collection in the site-wide navbar.
-- Adding and removing movies from a user's collection is dynamic and updated in real-time.
+- Adding and removing movies from a user's collection is dynamic and updated in real-time (_see_ code snippet below).  
+```c
+handleAdd(e){
+        const { movie, addToMyList, fetchMyLists } = this.props;
+
+        addToMyList(movie.id).then(fetchMyLists);
+    }
+
+    handleRemove(e){
+        const { movie, removeFromMyList, fetchMyLists } = this.props;
+
+        removeFromMyList(movie.id).then(fetchMyLists);
+    }
+
+    render(){
+        const {movie, mylists, currentUser} = this.props;
+
+        let added = 0;
+
+        mylists.forEach(listitem => {
+            if(listitem.user_id === parseInt(currentUser.id)){
+                if(listitem.movie_id === movie.id){
+                    added += 1;
+                }
+            }
+        })
+
+        const listbutton = (added > 0) ? (
+                <img className = 'list-button' src="https://cineflix-dev.s3.amazonaws.com/x-mark.png" onClick = {this.handleRemove}/>
+                    ) : (
+                <img className = 'list-button' src="https://cineflix-dev.s3.amazonaws.com/check-mark.png" onClick = {this.handleAdd}/>
+        );
+```
 
 ### Search
 - Cineflix implements the well-known 'fuzzy-search' library, that allows users to search for a specific movie by title.
